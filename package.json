@@ -1,0 +1,22 @@
+{
+  "name": "enbiciporcolombia",
+  "version": "0.1.0",
+  "description": "Sitio Web Oficial de Enbiciporcolombia, conoce Colombia en bici",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnoldRestrepo/enbiciporcolombia.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "@restrepo_arnold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnoldRestrepo/enbiciporcolombia/issues"
+  },
+  "homepage": "https://github.com/ArnoldRestrepo/enbiciporcolombia#readme"
+}
