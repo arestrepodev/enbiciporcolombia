@@ -4,6 +4,8 @@
   "description": "Sitio Web Oficial de Enbiciporcolombia, conoce Colombia en bici",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,20 @@
   "bugs": {
     "url": "https://github.com/ArnoldRestrepo/enbiciporcolombia/issues"
   },
-  "homepage": "https://github.com/ArnoldRestrepo/enbiciporcolombia#readme"
+  "homepage": "https://github.com/ArnoldRestrepo/enbiciporcolombia#readme",
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.6",
+    "html-webpack-plugin": "3.2.0",
+    "webpack": "4.39.2",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "3.8.0"
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "styled-components": "4.3.2"
+  }
 }
