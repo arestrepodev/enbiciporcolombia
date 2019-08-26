@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDom from "react-dom";
+import { render } from "react-dom";
+import App from "./App";
+const $appElement = document.getElementById("app");
 
-const $app = document.getElementById("app");
-
-ReactDom.render(<p>Hello</p>, $app);
+render(<App />, $appElement);
