@@ -1,21 +1,27 @@
 import React from "react";
 import { IMG_PATH } from "../helpers";
 import styled from "styled-components";
+import { Menu } from "./Menu";
 
-const Header = () => {
+export const Header = () => {
   const WrapperHeader = styled.section`
-    background: red;
-    padding: 1rem;
+    background: #fafafa;
+    padding: 0.5rem 1rem;
     margin: 0;
+  `;
+
+  const Header = styled.header`
+    display: grid;
+    grid-template-columns: 150px 2fr;
+    align-items: center;
   `;
 
   return (
     <WrapperHeader>
-      <header>
+      <Header>
         <img src={`${IMG_PATH}enbiciporcolombia.svg`} width="120" alt="Logo" />
-      </header>
+        <Menu />
+      </Header>
     </WrapperHeader>
   );
 };
-
-export default Header;
