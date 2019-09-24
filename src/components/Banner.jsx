@@ -7,7 +7,7 @@ const BannerSection = styled.section`
 `;
 
 const Video = styled.video`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: auto;
 `;
@@ -15,6 +15,11 @@ const Video = styled.video`
 const BannerContent = styled.article`
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
 `;
 
 export const Banner = () => (
