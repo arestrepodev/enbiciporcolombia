@@ -14,7 +14,7 @@ export const Menu = () => {
           text-decoration: none;
           color: var(--color-black);
           &:hover {
-            color: var(--color-blue);
+            color: var(--color-light-green);
           }
         }
       }
