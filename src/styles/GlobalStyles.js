@@ -5,6 +5,9 @@ export const GlobalStyle = createGlobalStyle`
     --color-blue: #87E1E4;
     --color-light-green: #03796D;
     --color-dark-green: #266B64;
+    --color-white: #fefefe;
+    --color-gray: #595959;
+    --color-black: #212121;
   }
 
   html{
@@ -23,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   h1,h2,h3,h4,h5,h6{
     font-family: "Montserrat";
   }
+
 
   /* Responsive Images */
   img{
