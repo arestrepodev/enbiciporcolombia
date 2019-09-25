@@ -1,5 +1,10 @@
 import React from "react";
-
-const About = () => <p>About Page</p>;
+import { Header } from "../../components/Header";
+const About = () => (
+  <>
+    <Header />
+    <p>¿Por qué En Bici?</p>
+  </>
+);
 
 export default About;
