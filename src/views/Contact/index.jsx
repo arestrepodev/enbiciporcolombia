@@ -1,5 +1,11 @@
 import React from "react";
+import { Header } from "../../components/Header";
 
-const Contact = () => <p>Contact Page</p>;
+const Contact = () => (
+  <>
+    <Header />
+    <p>Contact Page</p>
+  </>
+);
 
 export default Contact;

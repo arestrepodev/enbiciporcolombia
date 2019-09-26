@@ -1,5 +1,11 @@
 import React from "react";
+import { Header } from "../../components/Header";
 
-const NotFound = () => <p>Not Found</p>;
+const NotFound = () => (
+  <>
+    <Header />
+    <p>Not Found</p>
+  </>
+);
 
 export default NotFound;

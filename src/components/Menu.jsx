@@ -19,6 +19,11 @@ export const Menu = () => {
         }
       }
     }
+    @media (max-width: 768px) {
+      ul li {
+        padding: 0 0.3rem;
+      }
+    }
   `;
 
   return (
