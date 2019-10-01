@@ -32,6 +32,10 @@ const Plan = styled.article`
     width: 100%;
     height: auto;
   }
+  &:hover {
+    background: rgba(240, 240, 240, 0.5);
+    cursor: pointer;
+  }
 `;
 
 const PlanLabels = styled.div`
@@ -51,7 +55,7 @@ const PlanLabels = styled.div`
 `;
 
 const PlanDescription = styled.div`
-  background: white;
+  /* background: white; */
   padding: 1rem;
   h4 {
     padding: 0;
@@ -66,7 +70,7 @@ const PlanPrice = styled.div`
   align-items: center;
   padding: 0.5rem 1rem;
   justify-content: space-between;
-  background: var(--color-white);
+  /* background: var(--color-white); */
   span {
     display: flex;
     align-items: center;

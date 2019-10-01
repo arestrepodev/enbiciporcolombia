@@ -38,11 +38,24 @@ const BannerContent = styled.article`
   }
   h1 {
     font-size: 3.5rem;
-    line-height: 1.5;
+    line-height: 1;
+    margin: 1rem 0;
   }
   p {
     font-size: 1.2rem;
     line-height: 1.2;
+  }
+  @media (max-width: 368px) {
+    padding: 5rem 0.5rem;
+    small {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 `;
 
