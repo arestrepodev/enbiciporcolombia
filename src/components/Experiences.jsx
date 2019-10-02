@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { LinkButtonBlue } from "../styles/Buttons";
 
 const ExperiencesWrapper = styled.section`
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   padding: 2rem 0;
   background: rgba(250, 250, 250, 0.4);
   display: flex;

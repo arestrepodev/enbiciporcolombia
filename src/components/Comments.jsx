@@ -9,8 +9,7 @@ const CommentsWrapper = styled.section`
   background: url("https://picsum.photos/id/961/1000/350") top center
     no-repeat/cover var(--color-black);
   padding: 2rem 1rem;
-  & p {
-  }
+  box-shadow: inset 0px 0px 5px 0px rgba(89, 89, 89, 0.57);
 `;
 
 const CommentsTitle = styled.h3`
@@ -32,6 +31,8 @@ const CommentsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0 1rem;
+  @media (max-width: 768px) {
+  }
 `;
 
 const Comment = styled.li`
@@ -43,6 +44,27 @@ const Comment = styled.li`
     height: 100px;
     border-radius: 50%;
     margin-right: 10px;
+  }
+  @media screen and (max-width: 1120px) {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media screen and (max-width: 968px) {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 1rem;
+    }
+  }
+`;
+
+const CommentDescription = styled.div`
+  blockquote {
+    margin-left: 0.5rem;
   }
 `;
 
@@ -60,7 +82,7 @@ export const Comments = () => {
             src="https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
             alt="Perfil 1"
           />
-          <div>
+          <CommentDescription>
             <div>
               <MdStar />
               <MdStar />
@@ -72,64 +94,7 @@ export const Comments = () => {
               debitis!
             </p>
             <blockquote>Andrés Perez</blockquote>
-          </div>
-        </Comment>
-        <Comment>
-          <img
-            src="https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
-            alt="Perfil 1"
-          />
-          <div>
-            <div>
-              <MdStar />
-              <MdStar />
-              <MdStar />
-              <MdStar />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              debitis!
-            </p>
-            <blockquote>Andrés Perez</blockquote>
-          </div>
-        </Comment>
-        <Comment>
-          <img
-            src="https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
-            alt="Perfil 1"
-          />
-          <div>
-            <div>
-              <MdStar />
-              <MdStar />
-              <MdStar />
-              <MdStar />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              debitis!
-            </p>
-            <blockquote>Andrés Perez</blockquote>
-          </div>
-        </Comment>
-        <Comment>
-          <img
-            src="https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
-            alt="Perfil 1"
-          />
-          <div>
-            <div>
-              <MdStar />
-              <MdStar />
-              <MdStar />
-              <MdStar />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              debitis!
-            </p>
-            <blockquote>Andrés Perez</blockquote>
-          </div>
+          </CommentDescription>
         </Comment>
       </CommentsList>
     </CommentsWrapper>
