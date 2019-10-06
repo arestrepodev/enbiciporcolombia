@@ -4,6 +4,9 @@ import styled from "styled-components";
 import { MdMenu, MdMoreVert } from "react-icons/md";
 export const Menu = () => {
   const Nav = styled.nav`
+    &:focus {
+      outline: 0;
+    }
     ul {
       display: flex;
       justify-content: flex-end;

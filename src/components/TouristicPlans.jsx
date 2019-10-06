@@ -86,6 +86,7 @@ export const TouristicPlans = () => {
           <Plan key={plan.id}>
             <img src={plan.img} alt={plan.title} />
             <PlanLabels>
+              <h3></h3>
               <ul>
                 <li>
                   <MdToday />

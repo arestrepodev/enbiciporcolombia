@@ -1,6 +1,7 @@
 import React from "react";
-import { MdStar } from "react-icons/md";
+import { MdStarHalf } from "react-icons/md";
 import styled from "styled-components";
+import comments from "../api/comments.json";
 
 const CommentsWrapper = styled.section`
   width: 100%;
@@ -17,6 +18,10 @@ const CommentsTitle = styled.h3`
   text-align: center;
   line-height: 1.6;
   color: var(--color-white);
+  @media screen and (max-width: 372px) {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
 `;
 
 const CommentsDescription = styled.p`
@@ -32,6 +37,12 @@ const CommentsList = styled.ul`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0 1rem;
   @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  @media (max-width: 468px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 `;
 
@@ -63,8 +74,17 @@ const Comment = styled.li`
 `;
 
 const CommentDescription = styled.div`
+  div {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
   blockquote {
     margin-left: 0.5rem;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.2;
   }
 `;
 
@@ -77,25 +97,19 @@ export const Comments = () => {
         eso ellos nos recomiendan
       </CommentsDescription>
       <CommentsList>
-        <Comment>
-          <img
-            src="https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
-            alt="Perfil 1"
-          />
-          <CommentDescription>
-            <div>
-              <MdStar />
-              <MdStar />
-              <MdStar />
-              <MdStar />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              debitis!
-            </p>
-            <blockquote>Andrés Perez</blockquote>
-          </CommentDescription>
-        </Comment>
+        {comments.map(comment => (
+          <Comment key={comment.id}>
+            <img src={comment.img} alt={`Comentario de ${comment.author}`} />
+            <CommentDescription>
+              <div>
+                <MdStarHalf />
+                {comment.stars}
+              </div>
+              <p>{comment.message}</p>
+              <blockquote>{comment.author}</blockquote>
+            </CommentDescription>
+          </Comment>
+        ))}
       </CommentsList>
     </CommentsWrapper>
   );

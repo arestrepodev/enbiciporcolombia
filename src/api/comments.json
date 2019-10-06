@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "stars": 4,
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
+    "author": "Andres Perez",
+    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+  },
+  {
+    "id": 2,
+    "stars": 5,
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
+    "author": "Andres Perez",
+    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+  },
+  {
+    "id": 3,
+    "stars": 4,
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
+    "author": "Andres Perez",
+    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+  },
+  {
+    "id": 4,
+    "stars": 3,
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
+    "author": "Andres Perez",
+    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+  }
+]
