@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
   :root{
     --color-blue: #3FD0D4;
     --color-light-green: #03796D;
