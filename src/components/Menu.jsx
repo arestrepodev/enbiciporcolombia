@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MdMenu, MdMoreVert } from "react-icons/md";
+import {useWindowSize} from "../hooks/useWindowSize"
+
 export const Menu = () => {
   const Nav = styled.nav`
     &:focus {
@@ -67,11 +69,17 @@ export const Menu = () => {
     }
   `;
 
-  const [showMenu, setShowMenu] = useState(true);
+  const size = useWindowSize();
+
+  const [showMenu, setShowMenu] = useState("");
 
   const handleMenu = event => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(()=>{
+    size.width < 584 ? setShowMenu(false) : setShowMenu(true) 
+  },[size])
 
   return (
     <Nav>

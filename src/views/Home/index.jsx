@@ -4,6 +4,7 @@ import { Banner } from "../../components/Banner";
 import { TouristicPlans } from "../../components/TouristicPlans";
 import { Experiences } from "../../components/Experiences";
 import { Comments } from "../../components/Comments";
+import {Metrics} from "../../components/Metrics";
 
 const Home = () => (
   <>
@@ -12,6 +13,7 @@ const Home = () => (
     <TouristicPlans />
     <Experiences />
     <Comments />
+    <Metrics/>
   </>
 );
 
