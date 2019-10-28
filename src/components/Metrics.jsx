@@ -5,7 +5,7 @@ import { IMG_PATH } from "../helpers";
 const MetricsWrapper = styled.section`
   width: 100%;
   height: auto;
-  margin: 2rem auto;
+  margin: 0 auto;
   overflow: hidden;
 `
 

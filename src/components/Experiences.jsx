@@ -65,7 +65,7 @@ export const Experiences = () => {
           aventuras nuevas y mucho más. Vive la experiencia más grande que
           puedas vivir, que esperas...
         </p>
-        <LinkButtonBlue href="/enbici">Ver Más</LinkButtonBlue>
+        <LinkButtonBlue to="/enbici">Ver Más</LinkButtonBlue>
       </ExperienceDescription>
     </ExperiencesWrapper>
   );
