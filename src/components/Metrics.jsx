@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { IMG_PATH } from "../helpers";
 
 const MetricsWrapper = styled.section`
   width: 100%;
@@ -65,16 +66,16 @@ export const Metrics = () => {
   return(
     <MetricsWrapper>
       <MetricsImages>
-        <img src="https://picsum.photos/id/90/200/270" alt=""/>
-        <img src="https://picsum.photos/id/1000/200/270" alt=""/>
-        <img src="https://picsum.photos/id/101/200/270" alt=""/>
-        <img src="https://picsum.photos/id/400/200/270" alt=""/>
+        <img src={`${IMG_PATH}paisaje-galeria-horizonte.jpg`} alt="Horizonte Paisaje"/>
+        <img src={`${IMG_PATH}ciclista-clima-nublado.jpg`} alt="Ciclista Nublado"/>
+        <img src={`${IMG_PATH}bici-descansando.jpg`} alt="Bici Descansando"/>
+        <img src={`${IMG_PATH}fotopaisaje.jpg`} alt="Fotopaisaje"/>
       </MetricsImages>
       <MetricsNumbers>
         <ul>
           <li>
             <h4>256</h4>
-            <small>Invitados</small>
+            <small>Solicitudes</small>
           </li>
           <li>
             <h4>20</h4>

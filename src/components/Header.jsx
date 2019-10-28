@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <WrapperHeader>
       <Header>
-        <img src={`${IMG_PATH}enbiciporcolombia.svg`} width="120" alt="Logo" />
+        <img src={`${IMG_PATH}logotipo-enbiciporcolombia.svg`} width="80" alt="Logo" />
         <Menu />
       </Header>
     </WrapperHeader>
