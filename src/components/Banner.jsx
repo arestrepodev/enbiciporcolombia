@@ -48,7 +48,7 @@ const BannerContent = styled.article`
   @media (max-width: 368px) {
     padding: 5rem 0.5rem;
     small {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
     h1 {
       font-size: 2.5rem;

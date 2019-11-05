@@ -43,4 +43,10 @@ export const GlobalStyle = createGlobalStyle`
     overscroll-behavior: none;
     overflow-x: hidden;
   }
+
+  ::selection {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+  }
+  
 `;

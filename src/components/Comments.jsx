@@ -18,9 +18,12 @@ const CommentsTitle = styled.h3`
   text-align: center;
   line-height: 1.6;
   color: var(--color-white);
+  @media screen and (max-width: 580px) {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
   @media screen and (max-width: 372px) {
     font-size: 2.5rem;
-    line-height: 1.4;
   }
 `;
 
