@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Loading } from './components/Loading';
+import Loading from './components/Loading';
 import { GlobalStyle } from './styles/GlobalStyles';
 
 const Home = lazy(() => import('./views/Home'));
@@ -20,7 +20,8 @@ const App = () => (
           <Route path='/enbici' exact component={About} />
           <Route path='/plans' exact component={Plans} />
           <Route path='/partners' exact component={Partners} />
-          <Route path='/Contact' exact component={Contact} />
+          <Route path='/contact' exact component={Contact} />
+          <Route path='/loading' exact component={Loading} />
           <Route component={NotFound} />
         </Switch>
       </Suspense>
