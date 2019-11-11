@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { MdToday, MdPersonPin, MdPlace, MdStar } from "react-icons/md";
-import dataPlans from "../api/plans.json";
+import React from 'react';
+import styled from 'styled-components';
+import { MdToday, MdPersonPin, MdPlace, MdStar } from 'react-icons/md';
+import dataPlans from '../api/plans.json';
 
 const TouristicPlansWrapper = styled.section`
   padding: 1rem;
@@ -77,7 +77,7 @@ const PlanPrice = styled.div`
   }
 `;
 
-export const TouristicPlans = () => {
+const TouristicPlans = () => {
   return (
     <TouristicPlansWrapper>
       <h2>Planes</h2>
@@ -86,7 +86,7 @@ export const TouristicPlans = () => {
           <Plan key={plan.id}>
             <img src={plan.img} alt={plan.title} />
             <PlanLabels>
-              <h3></h3>
+              <h3 />
               <ul>
                 <li>
                   <MdToday />
@@ -151,3 +151,5 @@ export const TouristicPlans = () => {
     </TouristicPlansWrapper>
   );
 };
+
+export default TouristicPlans;

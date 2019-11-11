@@ -1,13 +1,13 @@
-import React from "react";
-import { MdStarHalf } from "react-icons/md";
-import styled from "styled-components";
-import comments from "../api/comments.json";
+import React from 'react';
+import { MdStarHalf } from 'react-icons/md';
+import styled from 'styled-components';
+import comments from '../api/comments.json';
 
 const CommentsWrapper = styled.section`
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: url("https://picsum.photos/id/961/1000/350") top center
+  background: url('https://picsum.photos/id/961/1000/350') top center
     no-repeat/cover var(--color-black);
   padding: 2rem 1rem;
   box-shadow: inset 0px 0px 5px 0px rgba(89, 89, 89, 0.57);
@@ -91,7 +91,7 @@ const CommentDescription = styled.div`
   }
 `;
 
-export const Comments = () => {
+const Comments = () => {
   return (
     <CommentsWrapper>
       <CommentsTitle>Mejores Comentarios</CommentsTitle>
@@ -117,3 +117,5 @@ export const Comments = () => {
     </CommentsWrapper>
   );
 };
+
+export default Comments;

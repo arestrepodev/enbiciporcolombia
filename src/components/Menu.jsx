@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { MdMenu, MdMoreVert } from "react-icons/md";
-import {useWindowSize} from "../hooks/useWindowSize"
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { MdMoreVert } from 'react-icons/md';
+import { useWindowSize } from '../hooks/useWindowSize';
 
-export const Menu = () => {
+const Menu = () => {
   const Nav = styled.nav`
     &:focus {
       outline: 0;
@@ -71,38 +71,41 @@ export const Menu = () => {
 
   const size = useWindowSize();
 
-  const [showMenu, setShowMenu] = useState("");
+  const [showMenu, setShowMenu] = useState('');
 
   const handleMenu = event => {
     setShowMenu(!showMenu);
   };
 
-  useEffect(()=>{
-    size.width < 584 ? setShowMenu(false) : setShowMenu(true) 
-  },[size])
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-expressions
+    size.width < 584 ? setShowMenu(false) : setShowMenu(true);
+  }, [size]);
 
   return (
     <Nav>
       {showMenu && (
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to='/'>Inicio</Link>
           </li>
           <li>
-            <Link to="/enbici">¿Por qué en Bici?</Link>
+            <Link to='/enbici'>¿Por qué en Bici?</Link>
           </li>
           <li>
-            <Link to="/plans">Planes</Link>
+            <Link to='/plans'>Planes</Link>
           </li>
           <li>
-            <Link to="/partners">Aliados</Link>
+            <Link to='/partners'>Aliados</Link>
           </li>
           <li>
-            <Link to="/contact">Contacto</Link>
+            <Link to='/contact'>Contacto</Link>
           </li>
         </ul>
       )}
-      <MdMoreVert size="40" onClick={handleMenu} />
+      <MdMoreVert size='40' onClick={handleMenu} />
     </Nav>
   );
 };
+
+export default Menu;

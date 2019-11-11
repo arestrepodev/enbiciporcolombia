@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { LinkButtonBlue } from "../styles/Buttons";
+import React from 'react';
+import styled from 'styled-components';
+import { LinkButtonBlue } from '../styles/Buttons';
 
 const ExperiencesWrapper = styled.section`
   margin: 1rem 0 0 0;
@@ -49,7 +49,7 @@ const ExperienceDescription = styled.article`
   }
 `;
 
-export const Experiences = () => {
+const Experiences = () => {
   return (
     <ExperiencesWrapper>
       <ExperiencesTitle>
@@ -57,7 +57,7 @@ export const Experiences = () => {
         <h3>Experiencias</h3>
       </ExperiencesTitle>
       <Video autoPlay muted loop>
-        <source src="/img/video-cover-en-bici.webm" />
+        <source src='/img/video-cover-en-bici.webm' />
       </Video>
       <ExperienceDescription>
         <p>
@@ -65,8 +65,10 @@ export const Experiences = () => {
           aventuras nuevas y mucho más. Vive la experiencia más grande que
           puedas vivir, que esperas...
         </p>
-        <LinkButtonBlue to="/enbici">Ver Más</LinkButtonBlue>
+        <LinkButtonBlue to='/enbici'>Ver Más</LinkButtonBlue>
       </ExperienceDescription>
     </ExperiencesWrapper>
   );
 };
+
+export default Experiences;

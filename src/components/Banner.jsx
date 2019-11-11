@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const BannerSection = styled.section`
   position: relative;
@@ -59,10 +59,10 @@ const BannerContent = styled.article`
   }
 `;
 
-export const Banner = () => (
+const Banner = () => (
   <BannerSection>
     <Video autoPlay muted loop>
-      <source src="/img/video-cover-en-bici.webm" />
+      <source src='/img/video-cover-en-bici.webm' />
     </Video>
     <BannerContent>
       <small>Disfruta</small>
@@ -71,3 +71,5 @@ export const Banner = () => (
     </BannerContent>
   </BannerSection>
 );
+
+export default Banner;
