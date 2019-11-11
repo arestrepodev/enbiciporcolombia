@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { MdDirectionsBike } from 'react-icons/md';
 
+/* Animation for Loading Line */
+const AnimateLine = keyframes`
+  from{
+    transform: translateX(100px);
+  } to {
+    transform: translateX(-100px);
+  }
+`;
+
 const LoadingWrapper = styled.section`
   position: absolute;
   top: 0;
@@ -14,14 +23,7 @@ const LoadingWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-const AnimateLine = keyframes`
-  from{
-    transform: translateX(100px);
-  } to {
-    transform: translateX(-100px);
-  }
+  flex-direction: column;
 `;
 
 const LoadingContent = styled.article`
@@ -32,10 +34,15 @@ const LoadingContent = styled.article`
   width: 120px;
   height: 120px;
   overflow: hidden;
+  transform: rotate(-20deg);
 `;
 
-const LoadingText = styled.article`
-  margin: 1rem 0;
+const LoadingText = styled.p`
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
 `;
 
 const Line = styled.span`
@@ -51,8 +58,8 @@ const Loading = ({ title }) => (
     <LoadingContent>
       <MdDirectionsBike size='90' />
       <Line />
-      <LoadingText>{title}...</LoadingText>
     </LoadingContent>
+    <LoadingText>{title}...</LoadingText>
   </LoadingWrapper>
 );
 
