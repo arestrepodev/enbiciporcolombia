@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const BannerSection = styled.section`
+export const BannerSection = styled.section`
   position: relative;
   width: 100%;
   height: 500px;
@@ -9,7 +8,7 @@ const BannerSection = styled.section`
   overflow: hidden;
 `;
 
-const Video = styled.video`
+export const Video = styled.video`
   position: relative;
   min-width: 100%;
   min-height: auto;
@@ -17,7 +16,7 @@ const Video = styled.video`
   z-index: 1;
 `;
 
-const BannerContent = styled.article`
+export const BannerContent = styled.article`
   background: rgba(3, 121, 109, 0.5);
   position: absolute;
   height: 100%;
@@ -58,18 +57,3 @@ const BannerContent = styled.article`
     }
   }
 `;
-
-const Banner = () => (
-  <BannerSection>
-    <Video autoPlay muted loop>
-      <source src='/img/video-cover-en-bici.webm' />
-    </Video>
-    <BannerContent>
-      <small>Disfruta</small>
-      <h1>EN BICI POR COLOMBIA</h1>
-      <p>Los increíbles planes para que vivas la mejor aventura.</p>
-    </BannerContent>
-  </BannerSection>
-);
-
-export default Banner;

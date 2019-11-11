@@ -1,26 +1,26 @@
-const path = require("path");
+const path = require('path');
 
 const babel = {
   test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   use: {
-    loader: "babel-loader"
+    loader: 'babel-loader'
   }
 };
 
 const config = {
-  mode: "development",
+  mode: 'development',
   entry: {
-    index: "./src/index.js"
+    index: './src/index.js'
   },
   output: {
-    filename: "[name].js",
-    path: path.join(__dirname, "dist/js")
+    filename: '[name].js',
+    path: path.join(__dirname, 'dist/js')
   },
   devServer: {
-    contentBase: "./dist",
+    contentBase: './dist',
     historyApiFallback: {
-      index: "index.html"
+      index: 'index.html'
     },
     port: 9000
   },
@@ -28,7 +28,7 @@ const config = {
     rules: [babel]
   },
   resolve: {
-    extensions: [".js", ".jsx", ".json"]
+    extensions: ['.js', '.jsx', '.json']
   }
 };
 

@@ -1,9 +1,6 @@
-import React from 'react';
-import { MdStarHalf } from 'react-icons/md';
 import styled from 'styled-components';
-import comments from '../api/comments.json';
 
-const CommentsWrapper = styled.section`
+export const CommentsWrapper = styled.section`
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -13,7 +10,7 @@ const CommentsWrapper = styled.section`
   box-shadow: inset 0px 0px 5px 0px rgba(89, 89, 89, 0.57);
 `;
 
-const CommentsTitle = styled.h3`
+export const CommentsTitle = styled.h3`
   font-size: 3rem;
   text-align: center;
   line-height: 1.6;
@@ -27,7 +24,7 @@ const CommentsTitle = styled.h3`
   }
 `;
 
-const CommentsDescription = styled.p`
+export const CommentsDescription = styled.p`
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -35,7 +32,7 @@ const CommentsDescription = styled.p`
   color: var(--color-white);
 `;
 
-const CommentsList = styled.ul`
+export const CommentsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0 1rem;
@@ -49,7 +46,7 @@ const CommentsList = styled.ul`
   }
 `;
 
-const Comment = styled.li`
+export const Comment = styled.li`
   background: var(--color-white);
   padding: 1rem;
   display: flex;
@@ -76,7 +73,7 @@ const Comment = styled.li`
   }
 `;
 
-const CommentDescription = styled.div`
+export const CommentDescription = styled.div`
   div {
     display: flex;
     align-items: center;
@@ -90,32 +87,3 @@ const CommentDescription = styled.div`
     line-height: 1.2;
   }
 `;
-
-const Comments = () => {
-  return (
-    <CommentsWrapper>
-      <CommentsTitle>Mejores Comentarios</CommentsTitle>
-      <CommentsDescription>
-        Para nosotros es importante el impacto que tenemos en las personas, por
-        eso ellos nos recomiendan
-      </CommentsDescription>
-      <CommentsList>
-        {comments.map(comment => (
-          <Comment key={comment.id}>
-            <img src={comment.img} alt={`Comentario de ${comment.author}`} />
-            <CommentDescription>
-              <div>
-                <MdStarHalf />
-                {comment.stars}
-              </div>
-              <p>{comment.message}</p>
-              <blockquote>{comment.author}</blockquote>
-            </CommentDescription>
-          </Comment>
-        ))}
-      </CommentsList>
-    </CommentsWrapper>
-  );
-};
-
-export default Comments;
