@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const babel = {
   test: /\.(js|jsx)$/,
@@ -10,7 +11,7 @@ const babel = {
 const config = {
   mode: "production",
   entry: {
-    index: "./src/index.js"
+    home: "./src/index.js"
   },
   output: {
     filename: "[name]-[hash].js",
@@ -20,6 +21,12 @@ const config = {
   module: {
     rules: [babel]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+      filename: "../../index.html"
+    })
+  ],
   resolve: {
     extensions: [".js", ".jsx", ".json"]
   },
