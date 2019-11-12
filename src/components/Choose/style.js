@@ -45,13 +45,18 @@ export const ChooseContent = styled.article`
 export const ChooseList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   position: relative;
-  li {
-    border-radius: 50%;
-    overflow: hidden;
-    img {
-      background-clip: border-box;
-    }
-  }
+`;
+
+export const Link = styled.a`
+  position: relative;
+`;
+
+export const LinkImage = styled.img`
+  border-radius: 50%;
+`;
+
+export const LinkOverlay = styled.div`
+  position: absolute;
 `;

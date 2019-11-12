@@ -3,7 +3,10 @@ import {
   ChooseWrapper,
   ChooseHeader,
   ChooseContent,
-  ChooseList
+  ChooseList,
+  Link,
+  LinkImage,
+  LinkOverlay
 } from './style';
 
 const Choose = () => {
@@ -22,19 +25,37 @@ const Choose = () => {
       <ChooseContent>
         <ChooseList>
           <li>
-            <a href='/#'>
-              <img src='https://picsum.photos/id/866/300/300' alt='Tunja' />
-            </a>
+            <Link href='/#'>
+              <LinkImage
+                src='https://picsum.photos/id/866/300/300'
+                alt='Tunja'
+              />
+              <LinkOverlay>
+                <p>Tunja</p>
+              </LinkOverlay>
+            </Link>
           </li>
           <li>
-            <a href='/#'>
-              <img src='https://picsum.photos/id/866/300/300' alt='Tunja' />
-            </a>
+            <Link href='/#'>
+              <LinkImage
+                src='https://picsum.photos/id/866/300/300'
+                alt='Tunja'
+              />
+              <LinkOverlay>
+                <p>Tunja</p>
+              </LinkOverlay>
+            </Link>
           </li>
           <li>
-            <a href='/#'>
-              <img src='https://picsum.photos/id/866/300/300' alt='Tunja' />
-            </a>
+            <Link href='/#'>
+              <LinkImage
+                src='https://picsum.photos/id/866/300/300'
+                alt='Tunja'
+              />
+              <LinkOverlay>
+                <p>Tunja</p>
+              </LinkOverlay>
+            </Link>
           </li>
         </ChooseList>
       </ChooseContent>
