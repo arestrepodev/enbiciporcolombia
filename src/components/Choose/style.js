@@ -47,16 +47,40 @@ export const ChooseList = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   position: relative;
-`;
-
-export const Link = styled.a`
-  position: relative;
-`;
-
-export const LinkImage = styled.img`
-  border-radius: 50%;
+  li {
+    overflow: hidden;
+  }
 `;
 
 export const LinkOverlay = styled.div`
   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue);
+  color: var(--color-white);
+  font-weight: bold;
+  opacity: 0;
+`;
+
+export const Link = styled.a`
+  position: relative;
+  display: block;
+  overflow: hidden;
+  &:hover div {
+    opacity: 1;
+    transition: opacity ease-in 200ms;
+  }
+`;
+
+export const LinkImage = styled.img`
+  border-radius: 50%;
+  backface-visibility: hidden;
+  width: 100%;
+  height: auto;
 `;
