@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.section`
   width: 100%;
-  height: auto;
+  height: 500px;
   overflow: hidden;
   padding: 3rem 1rem;
+  background: var(--color-white) url("./img/background-about-en-bici.png") top
+    center/cover no-repeat fixed;
 `;
 
 export const AboutTitle = styled.h2`
@@ -14,8 +16,10 @@ export const AboutTitle = styled.h2`
 
 export const AboutDescription = styled.p`
   font-size: 1rem;
-  color: var(--color-gray);
+  color: var(--color-white);
   width: 80%;
   line-height: 1.3;
   margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--color-black);
 `;
