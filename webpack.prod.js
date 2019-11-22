@@ -1,36 +1,31 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const babel = {
   test: /\.(js|jsx)$/,
   exclude: /node_modules/,
-  use: "babel-loader"
+  use: 'babel-loader'
 };
 
-
 const config = {
-  mode: "production",
-  entry: {
-    home: "./src/index.js"
-  },
+  mode: 'production',
+  entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    filename: "[name]-[hash].js",
-    path: path.join(__dirname, "dist/js/"),
-    publicPath: "/dist/js/",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/bundle.js'
   },
   module: {
     rules: [babel]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
-      filename: "../../index.html"
+      template: path.resolve(__dirname, 'src/template.html')
     })
   ],
   resolve: {
-    extensions: [".js", ".jsx", ".json"]
+    extensions: ['.js', '.jsx', '.json']
   },
-  node: {fs: "empty"}
+  node: { fs: 'empty' }
 };
 
 module.exports = config;

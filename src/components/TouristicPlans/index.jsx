@@ -13,7 +13,7 @@ import dataPlans from '../../api/plans.json';
 const TouristicPlans = () => {
   return (
     <TouristicPlansWrapper>
-      <h2>Planes</h2>
+      <h2>Destinos</h2>
       <TouristicPlansList>
         {dataPlans.map(plan => (
           <Plan key={plan.id}>
@@ -46,39 +46,6 @@ const TouristicPlans = () => {
             </PlanPrice>
           </Plan>
         ))}
-        {/* <Plan>
-          <img
-            src="https://picsum.photos/seed/picsum/200/300"
-            alt="Cover Plan"
-          />
-          <PlanLabels>
-            <ul>
-              <li>
-                <MdToday />1
-              </li>
-              <li>
-                <MdPersonPin />3
-              </li>
-              <li>
-                <MdPlace /> Tunja
-              </li>
-            </ul>
-          </PlanLabels>
-          <PlanDescription>
-            <h4>Moniquira</h4>
-            <small>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque, quaerat...
-            </small>
-          </PlanDescription>
-          <PlanPrice>
-            <span>$400.000</span>
-            <span>
-              <MdStar /> 6
-            </span>
-            <span>Good</span>
-          </PlanPrice>
-        </Plan> */}
       </TouristicPlansList>
     </TouristicPlansWrapper>
   );

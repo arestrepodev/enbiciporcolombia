@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const babel = {
   test: /\.(js|jsx)$/,
@@ -10,9 +11,7 @@ const babel = {
 
 const config = {
   mode: 'development',
-  entry: {
-    index: './src/index.js'
-  },
+  entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'dist/js')
@@ -22,11 +21,18 @@ const config = {
     historyApiFallback: {
       index: 'index.html'
     },
-    port: 9000
+    port: 9000,
+    open: true
   },
   module: {
     rules: [babel]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'En Bici Por Colombia',
+      template: path.resolve(__dirname, 'src/template.html')
+    })
+  ],
   resolve: {
     extensions: ['.js', '.jsx', '.json']
   }
