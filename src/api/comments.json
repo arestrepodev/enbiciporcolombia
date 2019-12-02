@@ -2,29 +2,29 @@
   {
     "id": 1,
     "stars": 4,
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
+    "message": "Lo mejor de EnBici son sus precios y lo originales que son...",
     "author": "Andres Perez",
-    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+    "img": "https://pbs.twimg.com/profile_images/754232659300065280/Oh_gkODg.jpg"
   },
   {
     "id": 2,
     "stars": 5,
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
-    "author": "Andres Perez",
-    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+    "message": "Conocer Colombia a la vez que viajas una sensación única",
+    "author": "Lorena Jimenez",
+    "img": "https://pbs.twimg.com/profile_images/1106725268750852162/GpTN8_Vv.jpg"
   },
   {
     "id": 3,
     "stars": 4,
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
-    "author": "Andres Perez",
-    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+    "message": "La mejor aventura de mi vida la vivi en Colombia...",
+    "author": "Andrea Gutierrez",
+    "img": "https://pbs.twimg.com/profile_images/948527399918034944/hf5SZ6bM.jpg"
   },
   {
     "id": 4,
     "stars": 3,
-    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis!",
-    "author": "Andres Perez",
-    "img": "https://pbs.twimg.com/profile_images/951055655594545153/F6eybr-i.jpg"
+    "message": "Atrévete a probar la experiencia del deporte mientras viajas...",
+    "author": "Orlando Perez",
+    "img": "https://pbs.twimg.com/profile_images/1081279702612897792/vm2OT_gQ.jpg"
   }
 ]
