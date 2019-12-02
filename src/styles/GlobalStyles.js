@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
   :root{
     --color-blue: #3FD0D4;
@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-dark-green: #266B64;
     --color-white: #fefefe;
     --color-gray: #595959;
+    --color-light-gray: #fbfafa;
     --color-black: #212121;
   }
 
@@ -50,3 +51,5 @@ export const GlobalStyle = createGlobalStyle`
   }
   
 `;
+
+export default GlobalStyle;

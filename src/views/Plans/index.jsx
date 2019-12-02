@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from '../../components/Header';
+import PlansList from '../../components/PlansList';
+import Footer from '../../components/Footer';
 
 const Plans = () => (
   <>
     <Header />
-    <p>Plans Page</p>
+    <PlansList />
+    <Footer />
   </>
 );
 

@@ -18,9 +18,7 @@ const config = {
   },
   devServer: {
     contentBase: './dist',
-    historyApiFallback: {
-      index: 'index.html'
-    },
+    historyApiFallback: true,
     port: 9000,
     open: true
   },
