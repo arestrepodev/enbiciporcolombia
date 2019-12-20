@@ -17,6 +17,7 @@ export const PlansListHeader = styled.article`
   h1 {
     color: var(--color-white);
     font-size: 2.5rem;
+    text-align: center;
   }
 `;
 
@@ -51,4 +52,31 @@ export const Features = styled.ul`
 
 export const Plans = styled.ul`
   padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 1rem;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+`;
+
+export const Plan = styled.li`
+  background: var(--color-white);
+  box-shadow: 0px 0px 5px 0px rgba(89, 89, 89, 0.37);
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  article {
+    padding: 1rem;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+  }
 `;
