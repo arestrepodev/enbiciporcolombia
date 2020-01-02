@@ -1,19 +1,12 @@
 import React from 'react';
-import {
-  ExperiencesWrapper,
-  ExperiencesTitle,
-  ExperienceDescription,
-  Video
-} from './style';
+import { ExperiencesWrapper, ExperienceDescription, Video } from './style';
+import StyledTitle from '../StyledTitle';
 import { LinkButtonBlue } from '../../styles/Buttons';
 
 const Experiences = () => {
   return (
     <ExperiencesWrapper>
-      <ExperiencesTitle>
-        <small>Nuevas</small>
-        <h3>Experiencias</h3>
-      </ExperiencesTitle>
+      <StyledTitle title='Experiencias' subtitle='Nuevas' />
       <Video autoPlay muted loop>
         <source src='/img/video-cover-en-bici.webm' />
       </Video>

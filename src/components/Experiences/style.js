@@ -9,21 +9,6 @@ export const ExperiencesWrapper = styled.section`
   flex-direction: column;
 `;
 
-export const ExperiencesTitle = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  small {
-    color: var(--color-blue);
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-`;
-
 export const Video = styled.video`
   margin: 2rem auto;
   width: 400px;
