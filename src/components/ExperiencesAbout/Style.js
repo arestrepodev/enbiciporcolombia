@@ -7,10 +7,16 @@ export const ExperiencesAboutWrapper = styled.section`
 export const Features = styled.section`
   width: 100%;
   height: auto;
+  margin-top: 1rem;
   padding: 1rem 2rem;
   display: grid;
   grid-gap: 0 1rem;
   grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width: 668px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem 0;
+  }
 `;
 
 export const Feature = styled.article`
