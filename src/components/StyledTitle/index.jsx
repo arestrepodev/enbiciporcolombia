@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+// Styles
 const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@ const TitleText = styled.h3`
   line-height: 1.2;
 `;
 
+// Component
 const StyledTitle = ({ title, subtitle }) => (
   <TitleWrapper>
     <SubtitleText>{subtitle}</SubtitleText>
@@ -25,6 +27,7 @@ const StyledTitle = ({ title, subtitle }) => (
   </TitleWrapper>
 );
 
+// Props
 StyledTitle.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string

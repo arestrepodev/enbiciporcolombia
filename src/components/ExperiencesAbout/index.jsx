@@ -1,34 +1,46 @@
 import React from 'react';
 import StyledTitle from '../StyledTitle';
+import {
+  ExperiencesAboutWrapper,
+  Features,
+  Feature,
+  FeatureDescription
+} from './Style';
 
 const ExperiencesAbout = () => {
   return (
-    <>
+    <ExperiencesAboutWrapper>
       <StyledTitle subtitle='Vive una Aventura' title='Sobre tu Bici' />
-      <section>
-        <article>
+      <Features>
+        <Feature>
           <img
-            src='https://i.picsum.photos/id/244/300/400.jpg'
+            src='https://i.picsum.photos/id/244/500/400.jpg'
             alt='adventure'
           />
-          <h3>Aventura</h3>
-          <p>Cada salida es una aventura por Colombia.</p>
-        </article>
-        <article>
-          <h3>Diversión</h3>
-          <p>La diversión te espera.</p>
-          <img src='https://i.picsum.photos/id/191/300/400.jpg' alt='party' />
-        </article>
-        <article>
-          <h3>Adrenalina</h3>
-          <p>Cada curva, cada tramo un desafio.</p>
+          <FeatureDescription>
+            <h3>Aventura</h3>
+            <p>Cada salida es una aventura por Colombia.</p>
+          </FeatureDescription>
+        </Feature>
+        <Feature>
+          <img src='https://i.picsum.photos/id/191/500/400.jpg' alt='party' />
+          <FeatureDescription>
+            <h3>Diversión</h3>
+            <p>La diversión te espera.</p>
+          </FeatureDescription>
+        </Feature>
+        <Feature>
           <img
-            src='https://i.picsum.photos/id/196/300/400.jpg'
+            src='https://i.picsum.photos/id/196/500/400.jpg'
             alt='adrenaline'
           />
-        </article>
-      </section>
-    </>
+          <FeatureDescription>
+            <h3>Adrenalina</h3>
+            <p>Cada curva, cada tramo un desafio.</p>
+          </FeatureDescription>
+        </Feature>
+      </Features>
+    </ExperiencesAboutWrapper>
   );
 };
 
