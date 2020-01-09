@@ -1,4 +1,4 @@
-dist/js
+dist
 # dist/img
 node_modules/
 ./package-lock.json
