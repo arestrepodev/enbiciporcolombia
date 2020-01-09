@@ -1,5 +1,5 @@
 import React from "react";
-
+import {ButtonBlue} from "../../styles/Buttons"
 
 const ContactForm = () => (
   <form action="#">
@@ -17,6 +17,9 @@ const ContactForm = () => (
       <label htmlFor="email">Email</label>
       <input type="email" name="email" id="email" placeholder="Tu Email..."/>
     </article>
+    <article>
+      <ButtonBlue type="submit">Enviar</ButtonBlue>
+    </article> 
   </form>
 )
 
