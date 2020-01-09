@@ -1,10 +1,15 @@
 import React from 'react';
 import Header from '../../components/Header';
+import LandingContact from "../../components/LandingContact";
+import ContactForm from "../../components/ContactForm";
+import Footer from "../../components/Footer"
 
 const Contact = () => (
   <>
     <Header />
-    <p>Contact Page</p>
+    <LandingContact/>
+    <ContactForm/>
+    <Footer/>
   </>
 );
 
