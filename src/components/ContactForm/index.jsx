@@ -1,26 +1,27 @@
-import React from "react";
-import {ButtonBlue} from "../../styles/Buttons"
+import React from 'react';
+import { ButtonBlue } from '../../styles/Buttons';
+import { Form, Title, FormControl, Subtitle } from './style';
 
 const ContactForm = () => (
-  <form action="#">
-    <h3>Escríbe tu mensaje</h3>
-    <p>Pronto nos comunicaremos contigo</p>
-    <article>
-      <label htmlFor="message">Tu Mensaje:</label>
-      <textarea name="message" id="message" cols="30" rows="10" placeholder="Mi Mensaje..."/>
-    </article>
-    <article>
-      <label htmlFor="name">Nombre</label>
-      <input type="text" name="name" id="name" placeholder="Tu Nombre..."/>
-    </article>
-    <article>
-      <label htmlFor="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Tu Email..."/>
-    </article>
-    <article>
-      <ButtonBlue type="submit">Enviar</ButtonBlue>
-    </article> 
-  </form>
-)
+  <Form action='#'>
+    <Title>Escríbe tu mensaje</Title>
+    <Subtitle>Pronto nos comunicaremos contigo</Subtitle>
+    <FormControl>
+      <label htmlFor='message'>Tu Mensaje:</label>
+      <textarea name='message' id='message' placeholder='Mi Mensaje...' />
+    </FormControl>
+    <FormControl>
+      <label htmlFor='name'>Nombre</label>
+      <input type='text' name='name' id='name' placeholder='Tu Nombre...' />
+    </FormControl>
+    <FormControl>
+      <label htmlFor='email'>Email</label>
+      <input type='email' name='email' id='email' placeholder='Tu Email...' />
+    </FormControl>
+    <FormControl>
+      <ButtonBlue type='submit'>Enviar</ButtonBlue>
+    </FormControl>
+  </Form>
+);
 
 export default ContactForm;
