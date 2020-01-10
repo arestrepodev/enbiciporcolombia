@@ -1,14 +1,28 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const LandingWrapper = styled.section`
   width: 100%;
   overflow: hidden;
   display: grid;
   grid-gap: 0 1rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   grid-template-columns: 1fr 400px;
-`
+`;
 
-export const Article = styled.article`
+export const Article = styled.article``;
 
-`
+export const LandingTitle = styled.h2`
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+`;
+
+export const LandingSubtitle = styled.p`
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-weight: 500;
+`;
+
+export const LandingDescription = styled.small`
+  line-height: 1.2;
+  font-size: 0.9rem;
+`;
