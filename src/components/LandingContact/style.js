@@ -7,6 +7,12 @@ export const LandingWrapper = styled.section`
   grid-gap: 0 1rem;
   padding: 2rem;
   grid-template-columns: 1fr 400px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  @media screen and (max-width: 468px) {
+    padding: 1rem;
+  }
 `;
 
 export const Article = styled.article``;
@@ -23,6 +29,8 @@ export const LandingSubtitle = styled.p`
 `;
 
 export const LandingDescription = styled.small`
-  line-height: 1.2;
+  line-height: 1.3;
   font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: block;
 `;
