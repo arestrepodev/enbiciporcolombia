@@ -9,6 +9,7 @@ import Metrics from '../../components/Metrics';
 import Choose from '../../components/Choose';
 import Footer from '../../components/Footer';
 
+
 const Home = () => (
   <>
     <Header />
