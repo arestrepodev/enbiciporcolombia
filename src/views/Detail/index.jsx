@@ -1,19 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Detail = ({ detailId }) => {
-  console.log(detailId);
+const Detail = ({ id }) => {
+  console.log(id);
   
   return(
     <section>
-      <p>Detalle de los Planes {detailId}</p>
+      <p>Detalle de los Planes {id}</p>
     </section>
   )
 }
 
-Detail.propTypes = {
-  detailId: PropTypes.string.isRequired
-}
+// Detail.propTypes = {
+//   detailId: PropTypes.string.isRequired
+// }
 
 
 

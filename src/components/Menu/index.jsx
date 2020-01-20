@@ -38,7 +38,7 @@ const Menu = () => {
             <Link to='/contact'>Contacto</Link>
           </li>
           <li>
-            <Link to='/detail/1'>Detalle</Link>
+            <Link to='/detail/3'>Detalle</Link>
           </li>
         </ul>
       )}

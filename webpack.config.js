@@ -14,7 +14,8 @@ const config = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'dist/js')
+    path: path.join(__dirname, 'dist/js'),
+    publicPath: "/"
   },
   devServer: {
     contentBase: './dist',
