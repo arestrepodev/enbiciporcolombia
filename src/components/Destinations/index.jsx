@@ -3,7 +3,7 @@ import StyledTitle from '../StyledTitle';
 
 const Destinations = () => (
   <section>
-    <StyledTitle subtitle='Tenemos Muchos' title='Destinos' />
+    <StyledTitle subtitle='Tenemos los Mejores' title='Destinos' />
   </section>
 );
 

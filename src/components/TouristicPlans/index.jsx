@@ -8,12 +8,13 @@ import {
   PlanDescription,
   PlanPrice
 } from './style';
+import StyledTitle from "../../components/StyledTitle"
 import dataPlans from '../../api/plans.json';
 
 const TouristicPlans = () => {
   return (
     <TouristicPlansWrapper>
-      <h2>Destinos</h2>
+      <StyledTitle subtitle='Tenemos los Mejores' title='Destinos' />
       <TouristicPlansList>
         {dataPlans.map(plan => (
           <Plan key={plan.id}>
