@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const Detail = ({ id }) => {
   console.log(id);
   
+  
   return(
     <section>
       <p>Detalle de los Planes {id}</p>
