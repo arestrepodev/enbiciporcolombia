@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@reach/router';
 import { MdMoreVert } from 'react-icons/md';
 import Nav from './style';
 import { useWindowSize } from '../../hooks/useWindowSize';
@@ -36,6 +36,9 @@ const Menu = () => {
           </li> */}
           <li>
             <Link to='/contact'>Contacto</Link>
+          </li>
+          <li>
+            <Link to='/detail/1'>Detalle</Link>
           </li>
         </ul>
       )}
