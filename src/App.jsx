@@ -12,6 +12,7 @@ const Partners = lazy(() => import('./views/Partners'));
 const Contact = lazy(() => import('./views/Contact'));
 const NotFound = lazy(() => import('./views/NotFound'));
 
+
 const App = () => (
   <Suspense fallback={<Loading />}>
     <GlobalStyle />
