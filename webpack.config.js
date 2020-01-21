@@ -14,13 +14,14 @@ const config = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'dist/js'),
-    publicPath: "/"
+    path: path.join(__dirname, 'dist/'),
+    publicPath: '/'
   },
   devServer: {
     contentBase: './dist',
     historyApiFallback: true,
     port: 9000,
+    hot: true,
     open: true
   },
   module: {
