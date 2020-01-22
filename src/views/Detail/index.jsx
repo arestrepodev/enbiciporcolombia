@@ -10,7 +10,11 @@ const Detail = ({ detailId }) => {
 };
 
 Detail.propTypes = {
-  detailId: PropTypes.string.isRequired
+  detailId: PropTypes.string
+};
+
+Detail.defaultProps = {
+  detailId: '1'
 };
 
 export default Detail;

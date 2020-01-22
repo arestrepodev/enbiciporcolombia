@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const babel = {
   test: /\.(js|jsx)$/,
@@ -9,27 +10,37 @@ const babel = {
   }
 };
 
+const files = {
+  test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+  use: {
+    loader: 'file-loader',
+    options: {
+      outputPath: 'img/'
+    }
+  }
+};
+
 const config = {
   mode: 'development',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    filename: '[name].js',
-    path: path.join(__dirname, 'dist/'),
-    publicPath: '/'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/[name].js',
+    publicPath: 'http://localhost:9000/'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
     port: 9000,
     hot: true,
     open: true
   },
   module: {
-    rules: [babel]
+    rules: [babel, files]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'En Bici Por Colombia',
       template: path.resolve(__dirname, 'src/template.html')
     })
   ],
