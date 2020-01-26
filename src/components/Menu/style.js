@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link as LinkRouter } from '@reach/router';
 
-const Nav = styled.nav`
+export const Nav = styled.nav`
   &:focus {
     outline: 0;
   }
@@ -32,9 +33,13 @@ const Nav = styled.nav`
     justify-content: flex-end;
     align-items: center;
     position: relative;
+    & .is-disabled {
+      left: -165px;
+    }
     ul {
       /* display: none; */
-      width: 160px;
+      transition: all ease-in-out 200ms;
+      width: 165px;
       position: fixed;
       top: 0;
       left: 0;
@@ -64,4 +69,8 @@ const Nav = styled.nav`
   }
 `;
 
-export default Nav;
+export const Link = styled(LinkRouter)`
+  &[aria-current] {
+    color: var(--color-light-green);
+  }
+`;

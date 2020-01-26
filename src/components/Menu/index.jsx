@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from '@reach/router';
-import { MdMoreVert } from 'react-icons/md';
-import Nav from './style';
+import { MdMoreVert, MdClose } from 'react-icons/md';
+import { Nav, Link } from './style';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 const Menu = () => {
@@ -20,29 +19,29 @@ const Menu = () => {
 
   return (
     <Nav>
-      {showMenu && (
-        <ul>
-          <li>
-            <Link to='/'>Inicio</Link>
-          </li>
-          <li>
-            <Link to='/enbici'>¿Por qué en Bici?</Link>
-          </li>
-          <li>
-            <Link to='/plans'>Planes</Link>
-          </li>
-          {/* <li>
+      <ul className={!showMenu ? 'is-disabled' : ''}>
+        <li>
+          <Link to='/'>Inicio</Link>
+        </li>
+        <li>
+          <Link to='/enbici'>¿Por qué en Bici?</Link>
+        </li>
+        <li>
+          <Link to='/plans'>Planes</Link>
+        </li>
+        {/* <li>
             <Link to='/partners'>Aliados</Link>
           </li> */}
-          <li>
-            <Link to='/contact'>Contacto</Link>
-          </li>
-          <li>
-            <Link to='/detail/1'>Detalle 1</Link>
-          </li>
-        </ul>
-      )}
-      <MdMoreVert size='40' onClick={handleMenu} />
+        <li>
+          <Link to='/contact'>Contacto</Link>
+        </li>
+        <li>
+          <Link to='/detail/1'>Detalle 1</Link>
+        </li>
+      </ul>
+      <button onClick={handleMenu} type='button'>
+        {!showMenu ? <MdMoreVert size='40' /> : <MdClose size='40' />}
+      </button>
     </Nav>
   );
 };
