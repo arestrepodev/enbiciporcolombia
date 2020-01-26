@@ -17,7 +17,6 @@ const NotFound = lazy(() => import('./views/NotFound'));
 const App = () => (
   <Suspense fallback={<Loading />}>
     <GlobalStyle />
-    <Header />
     <Router>
       <Home path='/' />
       <About path='/enbici' />
@@ -26,7 +25,6 @@ const App = () => (
       <Detail path='/detail/:detailId' />
       <NotFound default />
     </Router>
-    <Footer />
   </Suspense>
 );
 
