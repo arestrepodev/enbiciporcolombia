@@ -34,7 +34,7 @@ export const PlansListTable = styled.div`
   margin: 0 auto;
   background: var(--color-white);
   transform: translateY(-60px);
-  box-shadow: 0 9px 16px 13px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.03);
 `;
 
 export const Features = styled.ul`
@@ -63,7 +63,7 @@ export const Plans = styled.ul`
 
 export const Plan = styled.li`
   background: var(--color-white);
-  box-shadow: 0px 0px 5px 0px rgba(89, 89, 89, 0.37);
+  box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.03);
   img {
     width: 100%;
     height: auto;

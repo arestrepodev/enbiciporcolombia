@@ -12,7 +12,7 @@ export const ExperiencesWrapper = styled.section`
 export const Video = styled.video`
   margin: 2rem auto;
   width: 400px;
-  box-shadow: 0px 0px 5px 0px rgba(89, 89, 89, 0.37);
+  box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.03);
   @media (max-width: 400px) {
     width: 100%;
   }
