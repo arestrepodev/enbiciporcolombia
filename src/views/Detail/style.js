@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import BackgroundImage from '../../assets/plans-background.jpg';
 
 export const DetailWrapper = styled.section`
   width: 100%;

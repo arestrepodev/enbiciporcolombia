@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdStars } from 'react-icons/md';
 import {
   PlansListWrapper,
@@ -9,8 +9,23 @@ import {
   Plans,
   Plan
 } from './style';
+import ApiPlansDetails from '../../api/plansDetails';
 
 const PlansList = () => {
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(`${ApiPlansDetails}`, {
+        method: 'get',
+        headers: {
+          Accept: 'application/json',
+          'Content-type': 'application/json'
+        }
+      });
+      const data = await response.json();
+      console.log(data);
+    };
+    fetchData();
+  }, []);
   return (
     <PlansListWrapper>
       <PlansListHeader>

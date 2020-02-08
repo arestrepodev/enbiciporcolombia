@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../../components/Layout';
 import {
@@ -8,7 +8,7 @@ import {
   DetailTable
 } from './style';
 
-const Detail = ({ detailId }) => {
+const Detail = ({ detailId, data }) => {
   return (
     <Layout>
       <DetailWrapper>
