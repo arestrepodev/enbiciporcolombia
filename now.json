@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "enbiciporcolombia",
-  "builds": [{"use": "@now/static-build", "src": "package.json"}],
+  "builds": [{ "use": "@now/static-build", "src": "package.json" }],
   "routes": [
     {
 			"src": "(.*).js",
