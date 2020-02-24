@@ -1,9 +1,10 @@
 {
   "name": "enbiciporcolombia",
   "version": "0.1.0",
-  "description": "Sitio Web Oficial de Enbiciporcolombia, conoce Colombia en bici",
+  "description": "Sitio web oficial de En Bici Por Colombia, conoce Colombia en bici",
   "main": "index.js",
   "scripts": {
+    "now-build": "npm run build",
     "serve": "http-server dist",
     "build": "webpack --config=webpack.prod.js",
     "dev": "webpack-dev-server",
