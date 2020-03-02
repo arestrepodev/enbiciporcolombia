@@ -15,22 +15,18 @@ const AboutEnBici = () => {
       <AboutDescriptionWrapper>
         <AboutTitle>¿Por qué En Bici?</AboutTitle>
         <AboutDescription>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          minima consectetur delectus dolor repellat optio inventore aut ut!
-          Dolorum et perspiciatis reprehenderit amet odio. Laudantium mollitia,
-          repellat quisquam amet ex quam, quasi doloribus a sint provident
-          molestiae ea ratione suscipit.
-        </AboutDescription>
-        <AboutDescription>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          minima consectetur delectus dolor repellat optio inventore aut ut!
-          Dolorum et perspiciatis reprehenderit amet odio. Laudantium mollitia,
-          repellat quisquam amet ex quam, quasi doloribus a sint provident
-          molestiae ea ratione suscipit.
+          Disfrutaras tus vacaciones, llegarás a sitios que nunca imaginaste, a
+          tus ojos les encantarán los paisajes, tu cuerpo será feliz de lo tu
+          mente logrará. Conocerás nuevas culturas, sabores, paisajes y
+          sentimientos. Lo más importante es que querras volver a Colombia un
+          pais que te abraza y te recibe con buenas rutas en bicicleta...
         </AboutDescription>
       </AboutDescriptionWrapper>
       <AboutImageWrapper>
-        <AboutImage src={`${IMG_PATH}plans-background.jpg`} alt='' />
+        <AboutImage
+          src={`${IMG_PATH}enbici-descansando.jpg`}
+          alt='Acerca de En Bici'
+        />
       </AboutImageWrapper>
     </AboutWrapper>
   );

@@ -4,7 +4,7 @@ export const AboutWrapper = styled.section`
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 400px;
   grid-gap: 0 1rem;
   overflow: hidden;
   padding: 3rem 2rem;
@@ -24,9 +24,9 @@ export const AboutTitle = styled.h2`
 export const AboutDescriptionWrapper = styled.div``;
 
 export const AboutDescription = styled.p`
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--color-black);
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 1rem;
   /* background: var(--color-black); */
 `;
