@@ -3,7 +3,12 @@ import { BannerSection, BannerContent, Video } from './style';
 
 const Banner = () => (
   <BannerSection>
-    <Video autoPlay muted loop>
+    <Video
+      autoPlay
+      muted
+      loop
+      poster='https://enbici.s3.us-east-2.amazonaws.com/images/portada-banner-small.jpg'
+    >
       <source src='/img/video-cover-en-bici.webm' />
     </Video>
     <BannerContent>
