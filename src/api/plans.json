@@ -9,7 +9,7 @@
     "base_price": "24-30 °C",
     "stars": 9,
     "opinions": "Good",
-    "img": "https://picsum.photos/id/866/300/150"
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-calido.jpg"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "base_price": "15-27 °C",
     "stars": 8,
     "opinions": "Good",
-    "img": "https://picsum.photos/id/400/300/150"
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-templado.jpg"
   },
   {
     "id": 3,
@@ -29,11 +29,11 @@
     "min_age": "18+",
     "plan_type": "scale",
     "title": "Clima Frío",
-    "description": "Vas a pedalear sobre 3440 M.S.N.M, disfrutarás de los paramos, lagunas y culturas. Donde conocerás desde la mina de sal de Zipaquirá, hasta el cerro de monserrate en Bogotá.",
+    "description": "Vas a pedalear sobre 3440 M.S.N.M, disfrutarás de los paramos, lagunas y culturas. Donde conocerás desde la mina de sal de Zipaquirá, hasta monserrate en Bogotá.",
     "base_price": "12-25 °C",
     "stars": 9,
     "opinions": "Good",
-    "img": "https://picsum.photos/id/400/300/150"
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-frio.jpg"
   },
   {
     "id": 4,
@@ -45,6 +45,6 @@
     "base_price": "31-38 °C",
     "stars": "9.5+",
     "opinions": "Good",
-    "img": "https://picsum.photos/id/405/300/150"
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-caliente.jpg"
   }
 ]
