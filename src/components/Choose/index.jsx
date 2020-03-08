@@ -24,26 +24,26 @@ const Choose = () => (
     <ChooseContent>
       <ChooseList>
         <li>
-          <Link href="/#">
-            <LinkImage src="https://picsum.photos/id/866/300/300" alt="Tunja" />
+          <Link href='/#'>
+            <LinkImage src='https://picsum.photos/id/866/300/300' alt='Tunja' />
             <LinkOverlay>
-              <p>Tunja</p>
+              <p>Plan Basic</p>
             </LinkOverlay>
           </Link>
         </li>
         <li>
-          <Link href="/#">
-            <LinkImage src="https://picsum.photos/id/866/300/300" alt="Tunja" />
+          <Link href='/#'>
+            <LinkImage src='https://picsum.photos/id/866/300/300' alt='Tunja' />
             <LinkOverlay>
-              <p>Santander</p>
+              <p>Plan Adventure</p>
             </LinkOverlay>
           </Link>
         </li>
         <li>
-          <Link href="/#">
-            <LinkImage src="https://picsum.photos/id/866/300/300" alt="Tunja" />
+          <Link href='/#'>
+            <LinkImage src='https://picsum.photos/id/866/300/300' alt='Tunja' />
             <LinkOverlay>
-              <p>Alto de la Rosa</p>
+              <p>Plan Extreme</p>
             </LinkOverlay>
           </Link>
         </li>

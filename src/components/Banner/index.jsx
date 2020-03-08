@@ -5,7 +5,7 @@ import { IMG_PATH } from '../../helpers';
 const Banner = () => (
   <BannerSection>
     <Video controls muted poster={`${IMG_PATH}portada-banner-small.jpg`}>
-      <source src={`${IMG_PATH}video-cover-en-bici.webm`} />
+      <source src='' />
     </Video>
     <BannerContent>
       <small>Disfruta</small>
