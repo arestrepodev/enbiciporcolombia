@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BannerSection = styled.section`
   position: relative;
   width: 100%;
-  height: 500px;
+  height: auto;
   background-attachment: scroll;
   overflow: hidden;
 `;
