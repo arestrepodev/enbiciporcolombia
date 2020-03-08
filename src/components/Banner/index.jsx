@@ -1,15 +1,11 @@
 import React from 'react';
 import { BannerSection, BannerContent, Video } from './style';
+import { IMG_PATH } from '../../helpers';
 
 const Banner = () => (
   <BannerSection>
-    <Video
-      autoPlay
-      muted
-      loop
-      poster='https://enbici.s3.us-east-2.amazonaws.com/images/portada-banner-small.jpg'
-    >
-      <source src='/img/video-cover-en-bici.webm' />
+    <Video controls muted poster={`${IMG_PATH}portada-banner-small.jpg`}>
+      <source src={`${IMG_PATH}video-cover-en-bici.webm`} />
     </Video>
     <BannerContent>
       <small>Disfruta</small>
