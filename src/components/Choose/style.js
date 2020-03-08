@@ -50,6 +50,10 @@ export const ChooseList = styled.ul`
   li {
     overflow: hidden;
   }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
 `;
 
 export const LinkOverlay = styled.div`
