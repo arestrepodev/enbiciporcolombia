@@ -9,6 +9,7 @@ import {
   Plans,
   Plan
 } from './style';
+import {IMG_PATH} from "../../helpers"
 import ApiPlansDetails from '../../api/plansDetails';
 
 const PlansList = () => {
@@ -40,7 +41,7 @@ const PlansList = () => {
           </Features>
           <Plans>
             <Plan>
-              <img src='https://picsum.photos/300/150' alt='FotoPaisaje' />
+              <img src={`${IMG_PATH}plan-basic.jpg`} alt='Plan Basic' />
               <article>
                 <h3>Plan Basic</h3>
                 <p>
@@ -55,7 +56,7 @@ const PlansList = () => {
               </article>
             </Plan>
             <Plan>
-              <img src='https://picsum.photos/300/150' alt='FotoPaisaje' />
+              <img src={`${IMG_PATH}plan-adventure.jpg`} alt='Plan Adventure' />
               <article>
                 <h3>Plan Adventure</h3>
                 <p>
@@ -70,7 +71,7 @@ const PlansList = () => {
               </article>
             </Plan>
             <Plan>
-              <img src='https://picsum.photos/300/150' alt='FotoPaisaje' />
+              <img src={`${IMG_PATH}plan-extreme.jpg`} alt='Plan Extreme' />
               <article>
                 <h3>Plan Extreme</h3>
                 <p>

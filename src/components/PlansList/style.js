@@ -12,7 +12,7 @@ export const PlansListHeader = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-black) url('./img/plans-background.jpg') top
+  background: var(--color-black) url('https://enbici.s3.us-east-2.amazonaws.com/images/background-plans.jpg') bottom
     center/cover no-repeat fixed;
   h1 {
     color: var(--color-white);
