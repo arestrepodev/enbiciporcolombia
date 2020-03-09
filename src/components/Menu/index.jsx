@@ -35,9 +35,6 @@ const Menu = () => {
         <li>
           <Link to='/contact'>Contacto</Link>
         </li>
-        <li>
-          <Link to='/detail/1'>Detalle 1</Link>
-        </li>
       </ul>
       <button onClick={handleMenu} type='button'>
         {!showMenu ? <MdMoreVert size='40' /> : <MdClose size='40' />}
