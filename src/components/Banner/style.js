@@ -4,7 +4,7 @@ export const BannerSection = styled.section`
   position: relative;
   width: 100%;
   height: 500px;
-  background-attachment: scroll;
+  background: url("https://enbici.s3.us-east-2.amazonaws.com/images/portada-banner-small.jpg") center center/cover no-repeat fixed;
   overflow: hidden;
 `;
 
