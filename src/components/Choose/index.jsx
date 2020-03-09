@@ -1,4 +1,5 @@
 import React from 'react';
+import {IMG_PATH} from "../../helpers"
 import {
   ChooseWrapper,
   ChooseHeader,
@@ -25,25 +26,25 @@ const Choose = () => (
       <ChooseList>
         <li>
           <Link href='/#'>
-            <LinkImage src='https://picsum.photos/id/866/300/300' alt='Tunja' />
+            <LinkImage src={`${IMG_PATH}plan-basic.jpg`} alt='Plan Basic' />
             <LinkOverlay>
-              <p>Plan Basic</p>
+              <h3>Plan Basic</h3>
             </LinkOverlay>
           </Link>
         </li>
         <li>
           <Link href='/#'>
-            <LinkImage src='https://picsum.photos/id/866/300/300' alt='Tunja' />
+            <LinkImage src={`${IMG_PATH}plan-adventure.jpg`} alt='Plan Adventure' />
             <LinkOverlay>
-              <p>Plan Adventure</p>
+              <h3>Plan Adventure</h3>
             </LinkOverlay>
           </Link>
         </li>
         <li>
           <Link href='/#'>
-            <LinkImage src='https://picsum.photos/id/866/300/300' alt='Tunja' />
+            <LinkImage src={`${IMG_PATH}plan-extreme.jpg`} alt='Plan Extreme' />
             <LinkOverlay>
-              <p>Plan Extreme</p>
+              <h3>Plan Extreme</h3>
             </LinkOverlay>
           </Link>
         </li>
