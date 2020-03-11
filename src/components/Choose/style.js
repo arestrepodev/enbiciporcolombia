@@ -66,7 +66,7 @@ export const LinkOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-blue);
+  background: rgba(63,208,212, .7);
   color: var(--color-white);
   font-weight: bold;
   opacity: 0;
