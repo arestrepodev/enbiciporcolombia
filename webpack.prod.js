@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const babel = {
   test: /\.(js|jsx)$/,
@@ -18,6 +19,7 @@ const config = {
     rules: [babel]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/template.html')
     })

@@ -16,16 +16,15 @@ const Choose = () => (
       <small>Escoge tu</small>
       <h3>Aventura en Bici</h3>
       <p>
-        En bici vas a conocer la verdadera aventura de explorar paisajes y
-        nuevas culturas, únete a la tendencia{' '}
-        <strong>ENBICIPORCOLOMBIA.</strong>
+        Escoge tus rutas y disfruta del paisaje, nsotros nos encargaremos para que pases las mejores vacaciones en compañia de{' '}
+        <strong>tú bicicleta.</strong>
       </p>
     </ChooseHeader>
 
     <ChooseContent>
       <ChooseList>
         <li>
-          <Link href='/#'>
+          <Link href='/plans'>
             <LinkImage src={`${IMG_PATH}plan-basic.jpg`} alt='Plan Basic' />
             <LinkOverlay>
               <h3>Plan Basic</h3>
@@ -33,7 +32,7 @@ const Choose = () => (
           </Link>
         </li>
         <li>
-          <Link href='/#'>
+          <Link href='/plans'>
             <LinkImage src={`${IMG_PATH}plan-adventure.jpg`} alt='Plan Adventure' />
             <LinkOverlay>
               <h3>Plan Adventure</h3>
@@ -41,7 +40,7 @@ const Choose = () => (
           </Link>
         </li>
         <li>
-          <Link href='/#'>
+          <Link href='/plans'>
             <LinkImage src={`${IMG_PATH}plan-extreme.jpg`} alt='Plan Extreme' />
             <LinkOverlay>
               <h3>Plan Extreme</h3>

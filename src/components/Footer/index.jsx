@@ -14,10 +14,13 @@ const Footer = () => {
         </p>
         <FooterList>
           <li>
-            <MdMail /> travel@enbiciporcolombia.com
+            <MdMail /> quieroviajar@enbiciporcolombia.com
           </li>
           <li>
-            <MdPhone /> 3456789
+            <MdPhone /> 312 4679089 - Colombia
+          </li>
+          <li>
+            <MdPhone /> 416 7748900 - Canadá
           </li>
           <li>
             <MdLocationOn /> Bogotá, Colombia.
