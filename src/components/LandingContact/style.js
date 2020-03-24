@@ -34,3 +34,7 @@ export const LandingDescription = styled.small`
   margin-bottom: 1rem;
   display: block;
 `;
+
+export const LandingImage = styled.img`
+  width: 100%;
+`;

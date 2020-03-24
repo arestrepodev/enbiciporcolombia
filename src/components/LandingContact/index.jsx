@@ -1,9 +1,11 @@
 import React from 'react';
+import { IMG_PATH } from '../../helpers/index';
 import {
   LandingWrapper,
   LandingTitle,
   LandingSubtitle,
-  LandingDescription
+  LandingDescription,
+  LandingImage
 } from './style';
 
 const LandingContact = () => (
@@ -23,8 +25,8 @@ const LandingContact = () => (
       </LandingDescription>
     </article>
     <article>
-      <img
-        src='https://picsum.photos/seed/picsum/400/250'
+      <LandingImage
+        src={`${IMG_PATH}contacto.jpg`}
         alt='Imagen de la sección de Contacto'
       />
     </article>
