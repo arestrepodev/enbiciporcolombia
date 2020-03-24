@@ -1,5 +1,5 @@
 import React from 'react';
-import {IMG_PATH} from "../../helpers"
+import { IMG_PATH } from '../../helpers';
 import {
   ChooseWrapper,
   ChooseHeader,
@@ -16,7 +16,8 @@ const Choose = () => (
       <small>Escoge tu</small>
       <h3>Aventura en Bici</h3>
       <p>
-        Escoge tus rutas y disfruta del paisaje, nsotros nos encargaremos para que pases las mejores vacaciones en compañia de{' '}
+        Escoge tus rutas y disfruta del paisaje, nsotros nos encargaremos para
+        que pases las mejores vacaciones en compañia de{' '}
         <strong>tú bicicleta.</strong>
       </p>
     </ChooseHeader>
@@ -24,7 +25,7 @@ const Choose = () => (
     <ChooseContent>
       <ChooseList>
         <li>
-          <Link href='/plans'>
+          <Link to='/plans'>
             <LinkImage src={`${IMG_PATH}plan-basic.jpg`} alt='Plan Basic' />
             <LinkOverlay>
               <h3>Plan Basic</h3>
@@ -32,15 +33,18 @@ const Choose = () => (
           </Link>
         </li>
         <li>
-          <Link href='/plans'>
-            <LinkImage src={`${IMG_PATH}plan-adventure.jpg`} alt='Plan Adventure' />
+          <Link to='/plans'>
+            <LinkImage
+              src={`${IMG_PATH}plan-adventure.jpg`}
+              alt='Plan Adventure'
+            />
             <LinkOverlay>
               <h3>Plan Adventure</h3>
             </LinkOverlay>
           </Link>
         </li>
         <li>
-          <Link href='/plans'>
+          <Link to='/plans'>
             <LinkImage src={`${IMG_PATH}plan-extreme.jpg`} alt='Plan Extreme' />
             <LinkOverlay>
               <h3>Plan Extreme</h3>

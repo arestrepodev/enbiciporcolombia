@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkRouter } from '@reach/router';
 
 export const ChooseWrapper = styled.section`
   padding: 3rem 1rem;
@@ -58,27 +59,31 @@ export const ChooseList = styled.ul`
 
 export const LinkOverlay = styled.div`
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 92%;
+  height: 92%;
+  top: 4%;
+  left: 4%;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(63,208,212, .7);
+  background: rgba(63, 208, 212, 0.7);
   color: var(--color-white);
   font-weight: bold;
-  opacity: 0;
+  opacity: 0.94;
+  transition: all ease-in 100ms;
 `;
 
-export const Link = styled.a`
+export const Link = styled(LinkRouter)`
   position: relative;
   display: block;
   overflow: hidden;
   &:hover div {
     opacity: 1;
-    transition: opacity ease-in 200ms;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 `;
 
