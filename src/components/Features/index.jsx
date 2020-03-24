@@ -30,34 +30,18 @@ const Features = () => {
           <li>
             <MdCameraEnhance size='50' />
             <h5>Conoce</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              non.
-            </p>
           </li>
           <li>
             <MdLocationOn size='50' />
             <h5>Disfruta</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              non.
-            </p>
           </li>
           <li>
             <MdLocalFlorist size='50' />
             <h5>Visita</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              non.
-            </p>
           </li>
           <li>
             <MdDirectionsBike size='50' />
             <h5>Entrena</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              non.
-            </p>
           </li>
         </FeaturesList>
       </FeaturesContent>
