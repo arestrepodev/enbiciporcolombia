@@ -17,11 +17,10 @@ const LandingContact = () => (
         capacítate, entrénate y reta tus capacidades.
       </LandingSubtitle>
       <LandingDescription>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad
-        nihil amet placeat error, suscipit, libero, eligendi aperiam consectetur
-        rem laborum dolores quidem unde repudiandae optio? Ab inventore dolores
-        temporibus qui, beatae quis necessitatibus maxime, quasi ullam
-        perferendis iusto natus!
+        Si tienes alguna duda, queja o comentario, puedes contactarnos o
+        enviarnos tus mensajes, pronto nos comunicaremos contigo. Recuerda que
+        En Bici Por Colombia te brinda las mejores oportunidades para que
+        conozcas Colombia en bicicleta.
       </LandingDescription>
     </article>
     <article>
