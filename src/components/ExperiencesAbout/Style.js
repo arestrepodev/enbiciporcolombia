@@ -26,16 +26,20 @@ export const Feature = styled.article`
     width: 100%;
     height: auto;
   }
+  &:hover div {
+    padding: 3rem 1rem;
+  }
 `;
 
 export const FeatureDescription = styled.div`
-  background-color: var(--color-blue);
+  background-color: rgba(63, 208, 212, 0.8);
   color: var(--color-white);
   position: absolute;
   padding: 1rem;
   bottom: 0;
   left: 0;
   right: 0;
+  transition: cubic-bezier(0.65, 0.05, 0.36, 1) all 200ms;
   h3 {
     margin-bottom: 0.5rem;
   }
