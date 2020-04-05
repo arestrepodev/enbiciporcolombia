@@ -1,59 +1,81 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const BannerSection = styled.section`
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background: url("https://enbici.s3.us-east-2.amazonaws.com/images/portada-banner-small.jpg") center center/cover no-repeat fixed;
-  overflow: hidden;
+const fade = keyframes`
+  from {opacity: .4}
+  to {opacity: 1}
 `;
 
-export const Video = styled.video`
+export const Wrapper = styled.section`
+  max-width: 100%;
   position: relative;
-  min-width: 100%;
-  min-height: auto;
-  bottom: 100px;
-  z-index: 1;
+  margin: auto;
+  & .fade {
+    -webkit-animation-name: ${fade};
+    -webkit-animation-duration: 1.5s;
+    animation-name: ${fade};
+    animation-duration: 1.5s;
+  }
 `;
 
-export const BannerContent = styled.article`
-  background: rgba(3, 121, 109, 0.5);
+export const Slide = styled.article`
+  display: none;
+  img {
+    width: 100%;
+  }
+`;
+
+export const Prev = styled.a`
+  cursor: pointer;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  padding: 5rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: var(--color-white);
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+`;
+export const Next = styled.a`
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+`;
+
+export const Dots = styled.div`
   text-align: center;
-  small {
-    font-size: 2rem;
-    line-height: 1;
-  }
-  h1 {
-    font-size: 3.5rem;
-    line-height: 1;
-    margin: 1rem 0;
-  }
-  p {
-    font-size: 1.2rem;
-    line-height: 1.2;
-  }
-  @media (max-width: 368px) {
-    padding: 5rem 0.5rem;
-    small {
-      font-size: 1.4rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1rem;
-    }
+`;
+
+export const Dot = styled.span`
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  &.active,
+  &:hover {
+    background-color: #717171;
   }
 `;
