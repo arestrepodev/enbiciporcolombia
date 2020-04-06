@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { MdStars } from 'react-icons/md';
+import { Link } from '@reach/router';
 import {
   PlansListWrapper,
   PlansListHeader,
@@ -7,9 +8,9 @@ import {
   PlansListTable,
   Features,
   Plans,
-  Plan
+  Plan,
 } from './style';
-import {IMG_PATH} from "../../helpers"
+import { IMG_PATH } from '../../helpers';
 import ApiPlansDetails from '../../api/plansDetails';
 
 const PlansList = () => {
@@ -19,8 +20,8 @@ const PlansList = () => {
         method: 'get',
         headers: {
           Accept: 'application/json',
-          'Content-type': 'application/json'
-        }
+          'Content-type': 'application/json',
+        },
       });
       const data = await response.json();
       console.log(data);
@@ -53,6 +54,7 @@ const PlansList = () => {
                 <span>
                   7.0 <MdStars />
                 </span>
+                <Link to='/plans/basic'>Ver Plan</Link>
               </article>
             </Plan>
             <Plan>
@@ -68,6 +70,7 @@ const PlansList = () => {
                 <span>
                   8.0 <MdStars />
                 </span>
+                <Link to='/plans/adventure'>Ver Plan</Link>
               </article>
             </Plan>
             <Plan>
@@ -83,6 +86,7 @@ const PlansList = () => {
                 <span>
                   9.0 <MdStars />
                 </span>
+                <Link to='/plans/extreme'>Ver Plan</Link>
               </article>
             </Plan>
           </Plans>
