@@ -12,12 +12,23 @@ export const PlansListHeader = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-black) url('https://enbici.s3.us-east-2.amazonaws.com/images/background-plans.jpg') bottom
-    center/cover no-repeat fixed;
+  background: var(--color-black)
+    url('https://enbici.s3.us-east-2.amazonaws.com/images/background-plans.jpg')
+    bottom center/cover no-repeat fixed;
   h1 {
     color: var(--color-white);
     font-size: 2.5rem;
     text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 468px) {
+    h1 {
+      font-size: 1.75rem;
+    }
   }
 `;
 
@@ -48,6 +59,11 @@ export const Features = styled.ul`
     font-size: 1.2rem;
     font-weight: bold;
   }
+  @media screen and (max-width: 168px) {
+    li {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const Plans = styled.ul`
@@ -58,6 +74,9 @@ export const Plans = styled.ul`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+  }
+  @media screen and (max-width: 468px) {
+    padding: 1rem;
   }
 `;
 
@@ -77,6 +96,13 @@ export const Plan = styled.li`
     p {
       line-height: 1.2;
       margin-bottom: 1rem;
+    }
+    span {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 1rem 0.5rem;
     }
   }
 `;

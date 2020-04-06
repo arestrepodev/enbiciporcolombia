@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { MdStars } from 'react-icons/md';
-import { Link } from '@reach/router';
 import {
   PlansListWrapper,
   PlansListHeader,
@@ -10,6 +9,7 @@ import {
   Plans,
   Plan,
 } from './style';
+import { LinkButtonBlueSmall } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
 import ApiPlansDetails from '../../api/plansDetails';
 
@@ -54,7 +54,11 @@ const PlansList = () => {
                 <span>
                   7.0 <MdStars />
                 </span>
-                <Link to='/plans/basic'>Ver Plan</Link>
+                <div>
+                  <LinkButtonBlueSmall className='is-block' to='/plans/basic'>
+                    Ver Plan Basic
+                  </LinkButtonBlueSmall>
+                </div>
               </article>
             </Plan>
             <Plan>
@@ -70,7 +74,14 @@ const PlansList = () => {
                 <span>
                   8.0 <MdStars />
                 </span>
-                <Link to='/plans/adventure'>Ver Plan</Link>
+                <div>
+                  <LinkButtonBlueSmall
+                    className='is-block'
+                    to='/plans/adventure'
+                  >
+                    Ver Plan Adventure
+                  </LinkButtonBlueSmall>
+                </div>
               </article>
             </Plan>
             <Plan>
@@ -86,7 +97,11 @@ const PlansList = () => {
                 <span>
                   9.0 <MdStars />
                 </span>
-                <Link to='/plans/extreme'>Ver Plan</Link>
+                <div>
+                  <LinkButtonBlueSmall className='is-block' to='/plans/extreme'>
+                    Ver Plan Extreme
+                  </LinkButtonBlueSmall>
+                </div>
               </article>
             </Plan>
           </Plans>
