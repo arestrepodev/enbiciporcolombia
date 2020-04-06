@@ -5,9 +5,9 @@ import { IMG_PATH } from '../../helpers';
 const Banner = () => (
   <BannerSection>
     <BannerContent>
-      <small>Disfruta</small>
+      <small>Disfruta de</small>
       <h1>EN BICI POR COLOMBIA</h1>
-      <p>Los increíbles planes para que vivas la mejor aventura.</p>
+      <p>Los increíbles planes para que vivas la mejor aventura. </p>
     </BannerContent>
   </BannerSection>
 );
