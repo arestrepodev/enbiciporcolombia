@@ -21,9 +21,9 @@ const App = () => (
       <Home path='/' />
       <About path='/enbici' />
       <Plans path='/plans' />
-      <Basic path='/plans/basic' />
-      <Adventure path='/plans/adventure' />
-      <Extreme path='/plans/extreme' />
+      <Basic path='/basic' />
+      <Adventure path='/adventure' />
+      <Extreme path='/extreme' />
       <Contact path='/contact' />
       <NotFound default />
     </Router>
