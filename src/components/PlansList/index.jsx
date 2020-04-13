@@ -7,7 +7,7 @@ import {
   PlansListTable,
   Features,
   Plans,
-  Plan,
+  Plan
 } from './style';
 import { LinkButtonBlueSmall } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
@@ -20,8 +20,8 @@ const PlansList = () => {
         method: 'get',
         headers: {
           Accept: 'application/json',
-          'Content-type': 'application/json',
-        },
+          'Content-type': 'application/json'
+        }
       });
       const data = await response.json();
       console.log(data);
@@ -55,7 +55,7 @@ const PlansList = () => {
                   7.0 <MdStars />
                 </span>
                 <div>
-                  <LinkButtonBlueSmall className='is-block' to='/plans/basic'>
+                  <LinkButtonBlueSmall className='is-block' to='/basic'>
                     Ver Plan Basic
                   </LinkButtonBlueSmall>
                 </div>
@@ -75,10 +75,7 @@ const PlansList = () => {
                   8.0 <MdStars />
                 </span>
                 <div>
-                  <LinkButtonBlueSmall
-                    className='is-block'
-                    to='/plans/adventure'
-                  >
+                  <LinkButtonBlueSmall className='is-block' to='/adventure'>
                     Ver Plan Adventure
                   </LinkButtonBlueSmall>
                 </div>
@@ -98,7 +95,7 @@ const PlansList = () => {
                   9.0 <MdStars />
                 </span>
                 <div>
-                  <LinkButtonBlueSmall className='is-block' to='/plans/extreme'>
+                  <LinkButtonBlueSmall className='is-block' to='/extreme'>
                     Ver Plan Extreme
                   </LinkButtonBlueSmall>
                 </div>
