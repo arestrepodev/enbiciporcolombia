@@ -78,3 +78,39 @@ export const Features = styled.ul`
     }
   }
 `;
+
+export const Detail = styled.div`
+  padding: 2rem;
+`;
+
+export const TitleGroup = styled.hgroup`
+  display: flex;
+  align-items: flex-end;
+  margin: 1rem 0;
+  h1 {
+    font-size: 2rem;
+  }
+  small {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    span {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--color-blue);
+    }
+  }
+`;
+
+export const Description = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-gap: 0 2rem;
+  margin: 1rem 0;
+  p {
+    line-height: 1.3;
+  }
+`;
+
+export const List = styled.div``;
+
+export const Gallery = styled.div``;
