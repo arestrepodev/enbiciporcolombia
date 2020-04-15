@@ -43,3 +43,27 @@ export const LinkButtonBlueSmall = styled(LinkButtonBlue)`
   padding: 0.8rem 1.2rem;
   font-size: 1rem;
 `;
+
+export const Ancle = styled.a`
+  border: none;
+  padding: 1rem 1.6rem;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+`;
+
+export const AncleBlue = styled(Ancle)`
+  background: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: 0px 0px 5px 0px rgba(89, 89, 89, 0.37);
+  &:hover {
+    box-shadow: 0px 0px 6px 0px rgba(89, 89, 89, 0.47);
+    background: linear-gradient(to right, var(--color-blue) 10%, #2ac8cc 40%);
+  }
+`;
+
+export const AncleBlueSmall = styled(AncleBlue)`
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+`;

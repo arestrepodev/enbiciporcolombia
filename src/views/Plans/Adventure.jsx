@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdInfo, MdFace, MdLocationOn } from 'react-icons/md';
 import Layout from '../../components/Layout';
-import { LinkButtonBlueSmall } from '../../styles/Buttons';
+import { AncleBlueSmall } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
 import {
   Wrapper,
@@ -79,9 +79,12 @@ const Adventure = () => {
                       alt='Plan Básico Río'
                     />
                   </Gallery>
-                  <LinkButtonBlueSmall className='is-block' to='/extreme'>
+                  <AncleBlueSmall
+                    className='is-block'
+                    href='https://wa.link/yvwpyc'
+                  >
                     Quiero Reservar
-                  </LinkButtonBlueSmall>
+                  </AncleBlueSmall>
                 </div>
                 <img
                   src={`${IMG_PATH}plan-adventure.jpg`}
