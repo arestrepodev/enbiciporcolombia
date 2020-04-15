@@ -7,7 +7,7 @@ import {
   PlansListTable,
   Features,
   Plans,
-  Plan
+  Plan,
 } from './style';
 import { LinkButtonBlueSmall } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
@@ -20,8 +20,8 @@ const PlansList = () => {
         method: 'get',
         headers: {
           Accept: 'application/json',
-          'Content-type': 'application/json'
-        }
+          'Content-type': 'application/json',
+        },
       });
       const data = await response.json();
       console.log(data);
@@ -46,8 +46,9 @@ const PlansList = () => {
               <article>
                 <h3>Plan Basic</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Praesentium, laboriosam molestias! Tenetur aut beatae ratione.
+                  Este plan se adecua a todos las personas que quieran iniciar a
+                  conocer Colombia en su bicicleta, realizamos recorridos
+                  cortos...
                 </p>
 
                 <b>$700.000 </b>
@@ -66,11 +67,12 @@ const PlansList = () => {
               <article>
                 <h3>Plan Adventure</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Praesentium, laboriosam molestias! Tenetur aut beatae ratione.
+                  Este plan reta a las personas que hagan ciclismo para
+                  aficionados de alto nivel a descrubir nuevos paisajes, tramos
+                  y rutas...
                 </p>
 
-                <b>$900.000 </b>
+                <b>$1.200.000 </b>
                 <span>
                   8.0 <MdStars />
                 </span>
@@ -86,8 +88,8 @@ const PlansList = () => {
               <article>
                 <h3>Plan Extreme</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Praesentium, laboriosam molestias! Tenetur aut beatae ratione.
+                  Este plan para expertos pondrá a prueba a los ciclistas de
+                  alto rendimiento ante los climas y paisajes de Colombia...
                 </p>
 
                 <b>$1.200.000 </b>

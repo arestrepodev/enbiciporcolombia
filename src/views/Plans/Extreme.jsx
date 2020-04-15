@@ -69,7 +69,7 @@ const Extreme = () => {
                   <Gallery>
                     <img
                       src={`${IMG_PATH}extreme-neblina.jpg`}
-                      alt='Foto Nairo Quintana'
+                      alt='Plan Extreme Neblina'
                     />
                     <img
                       src={`${IMG_PATH}extreme-destapado.jpg`}
@@ -77,7 +77,7 @@ const Extreme = () => {
                     />
                     <img
                       src={`${IMG_PATH}extreme-equipo.jpg`}
-                      alt='Plan Básico Río'
+                      alt='Plan Extreme Rio'
                     />
                   </Gallery>
                   <AncleBlueSmall
