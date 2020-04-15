@@ -21,11 +21,11 @@ const Header = () => {
             <FaWhatsapp />
             Quiero Cotizar
           </a>
-          <a href='https://wa.link/yvwpyc'>
+          <a href='https://wa.link/yvwpyc' className='is--hide'>
             <MdPermPhoneMsg />
             312 4679089 - CO
           </a>
-          <a href='https://wa.link/80vyix'>
+          <a href='https://wa.link/80vyix' className='is--hide'>
             <MdPermPhoneMsg />
             416 7748900 - CA
           </a>

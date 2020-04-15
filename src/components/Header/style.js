@@ -33,8 +33,8 @@ export const Contact = styled.div`
     text-decoration: none;
   }
 
-  @media screen and(max-width: 596px) {
-    a:nth-last-child(-n + 2) {
+  @media screen and (max-width: 596px) {
+    .is--hide {
       display: none;
     }
   }
