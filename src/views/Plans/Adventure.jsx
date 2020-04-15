@@ -49,11 +49,10 @@ const Adventure = () => {
               <Description>
                 <div>
                   <p>
-                    Este plan se adecua a todos las personas que quieran iniciar
-                    a conocer Colombia en su bicicleta, realizamos recorridos
-                    cortos y llenos de aventura que van a desafiar tu mente. Nos
-                    encargamos de todos los detalles para que no tengas que
-                    planear nada, recorreras y disfrutaras de los paisajes.
+                    Este plan reta a las personas que hagan ciclismo para
+                    aficionados de alto nivel a descrubir nuevos paisajes,
+                    tramos y rutas, te enfrentaras a territorios difíciles que
+                    pondrán a prueba tu mente y tu corazón.
                   </p>
                   <p>
                     El <strong> Plan Adventure</strong> incluye:
@@ -68,12 +67,15 @@ const Adventure = () => {
                   <h4>Galeria:</h4>
                   <Gallery>
                     <img
-                      src={`${IMG_PATH}basic-nairo.jpg`}
-                      alt='Foto Nairo Quintana'
+                      src={`${IMG_PATH}adventure-destapado.jpg`}
+                      alt='Recorrido Destapado'
                     />
-                    <img src={`${IMG_PATH}basic-quebrada.jpg`} alt='Quebrada' />
                     <img
-                      src={`${IMG_PATH}basic-rio.jpg`}
+                      src={`${IMG_PATH}adventure-lloviendo.jpg`}
+                      alt='Adventure Lloviendo'
+                    />
+                    <img
+                      src={`${IMG_PATH}adventure-equipo.jpg`}
                       alt='Plan Básico Río'
                     />
                   </Gallery>
