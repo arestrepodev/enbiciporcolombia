@@ -49,14 +49,14 @@ const Extreme = () => {
               <Description>
                 <div>
                   <p>
-                    Este plan se adecua a todos las personas que quieran iniciar
-                    a conocer Colombia en su bicicleta, realizamos recorridos
-                    cortos y llenos de aventura que van a desafiar tu mente. Nos
-                    encargamos de todos los detalles para que no tengas que
-                    planear nada, recorreras y disfrutaras de los paisajes.
+                    Este plan para expertos pondrá a prueba a los ciclistas de
+                    alto rendimiento ante los climas y los increíbles paisajes
+                    de Colombia. Te mediras a montañas, neblina, lluvia y sol
+                    inclemente. Pero al final sentirás la satisfacción de
+                    haberlo logrado.
                   </p>
                   <p>
-                    El <strong> Plan Adventure</strong> incluye:
+                    El <strong> Plan Extreme</strong> incluye:
                   </p>
                   <ol>
                     <li>Transporte Aeropuerto</li>
@@ -68,12 +68,15 @@ const Extreme = () => {
                   <h4>Galeria:</h4>
                   <Gallery>
                     <img
-                      src={`${IMG_PATH}basic-nairo.jpg`}
+                      src={`${IMG_PATH}extreme-neblina.jpg`}
                       alt='Foto Nairo Quintana'
                     />
-                    <img src={`${IMG_PATH}basic-quebrada.jpg`} alt='Quebrada' />
                     <img
-                      src={`${IMG_PATH}basic-rio.jpg`}
+                      src={`${IMG_PATH}extreme-destapado.jpg`}
+                      alt='Quebrada'
+                    />
+                    <img
+                      src={`${IMG_PATH}extreme-equipo.jpg`}
                       alt='Plan Básico Río'
                     />
                   </Gallery>
