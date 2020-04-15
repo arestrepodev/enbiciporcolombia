@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import Banner from '../../components/Banner';
+import Slider from '../../components/Slider';
 import TouristicPlans from '../../components/TouristicPlans';
 import Experiences from '../../components/Experiences';
 import Features from '../../components/Features';
@@ -10,7 +11,7 @@ import Choose from '../../components/Choose';
 
 const Home = () => (
   <Layout>
-    <Banner />
+    <Slider />
     <TouristicPlans />
     <Experiences />
     <Comments />
