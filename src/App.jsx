@@ -1,5 +1,4 @@
 import React, { lazy, Suspense } from 'react';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Router } from '@reach/router';
 import Loading from './components/Loading';
 import GlobalStyle from './styles/GlobalStyles';

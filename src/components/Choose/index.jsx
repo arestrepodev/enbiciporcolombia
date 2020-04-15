@@ -7,7 +7,7 @@ import {
   ChooseList,
   Link,
   LinkImage,
-  LinkOverlay
+  LinkOverlay,
 } from './style';
 
 const Choose = () => (
@@ -25,7 +25,7 @@ const Choose = () => (
     <ChooseContent>
       <ChooseList>
         <li>
-          <Link to='/plans'>
+          <Link to='/basic'>
             <LinkImage src={`${IMG_PATH}plan-basic.jpg`} alt='Plan Basic' />
             <LinkOverlay>
               <h3>Plan Basic</h3>
@@ -33,7 +33,7 @@ const Choose = () => (
           </Link>
         </li>
         <li>
-          <Link to='/plans'>
+          <Link to='/adventure'>
             <LinkImage
               src={`${IMG_PATH}plan-adventure.jpg`}
               alt='Plan Adventure'
@@ -44,7 +44,7 @@ const Choose = () => (
           </Link>
         </li>
         <li>
-          <Link to='/plans'>
+          <Link to='/extreme'>
             <LinkImage src={`${IMG_PATH}plan-extreme.jpg`} alt='Plan Extreme' />
             <LinkOverlay>
               <h3>Plan Extreme</h3>

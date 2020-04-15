@@ -1,6 +1,8 @@
 import React from 'react';
 import { MdInfo, MdFace, MdLocationOn } from 'react-icons/md';
 import Layout from '../../components/Layout';
+import { LinkButtonBlueSmall } from '../../styles/Buttons';
+import { IMG_PATH } from '../../helpers';
 import {
   Wrapper,
   HeaderPlan,
@@ -10,7 +12,6 @@ import {
   Detail,
   TitleGroup,
   Description,
-  List,
   Gallery,
 } from './style';
 
@@ -46,35 +47,45 @@ const Basic = () => {
                 </small>
               </TitleGroup>
               <Description>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  magnam beatae vitae nostrum accusamus ad vel minus numquam
-                  cupiditate. Qui quae neque officiis. Autem eius qui,
-                  voluptatem dolore ea vero, fugiat, blanditiis fugit odio sint
-                  sunt nihil unde ex ipsa.
-                </p>
+                <div>
+                  <p>
+                    Este plan se adecua a todos las personas que quieran iniciar
+                    a conocer Colombia en su bicicleta, realizamos recorridos
+                    cortos y llenos de aventura que van a desafiar tu mente. Nos
+                    encargamos de todos los detalles para que no tengas que
+                    planear nada, recorreras y disfrutaras de los paisajes.
+                  </p>
+                  <p>
+                    El <strong> Plan Basic</strong> incluye:
+                  </p>
+                  <ol>
+                    <li>Transporte Aeropuerto</li>
+                    <li>Alimentación durante el recorrido</li>
+                    <li>Visita a sitios de interés</li>
+                    <li>Hidratación y refrigerio</li>
+                    <li>Hotel</li>
+                  </ol>
+                  <h4>Galeria:</h4>
+                  <Gallery>
+                    <img
+                      src={`${IMG_PATH}basic-nairo.jpg`}
+                      alt='Foto Nairo Quintana'
+                    />
+                    <img src={`${IMG_PATH}basic-quebrada.jpg`} alt='Quebrada' />
+                    <img
+                      src={`${IMG_PATH}basic-rio.jpg`}
+                      alt='Plan Básico Río'
+                    />
+                  </Gallery>
+                  <LinkButtonBlueSmall className='is-block' to='/basic'>
+                    Quiero Reservar
+                  </LinkButtonBlueSmall>
+                </div>
                 <img
-                  src='https://enbici.s3.us-east-2.amazonaws.com/images/plan-basic.jpg'
+                  src={`${IMG_PATH}plan-basic.jpg`}
                   alt='Imagen Plan Basic'
                 />
               </Description>
-              <List>
-                <p>
-                  El <strong> Plan Basic</strong> incluye:
-                </p>
-                <ol>
-                  <li>Transporte Aeropuerto</li>
-                  <li>Alimentación durante el recorrido</li>
-                  <li>Visita a sitios de interés</li>
-                  <li>Hidratación y refrigerio</li>
-                  <li>Hotel</li>
-                </ol>
-              </List>
-              <Gallery>
-                <img src='' alt='Foto 1' />
-                <img src='' alt='Foto 2' />
-                <img src='' alt='Foto 3' />
-              </Gallery>
             </Detail>
           </TablePlan>
         </ContentPlan>
