@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// Slider Styles
 export const SliderWrapper = styled.section`
   width: 100%;
   max-width: 177.78%;
@@ -21,12 +22,8 @@ export const Slide = styled.article`
   position: relative;
   min-width: 100%;
   height: 100%;
-  transition: 400ms ease-in;
+  transition: 500ms ease-in;
   overflow: hidden;
-  img {
-    width: 100%;
-    height: auto;
-  }
 `;
 
 const Go = styled.button`
@@ -53,4 +50,58 @@ export const GoLeft = styled(Go)`
 export const GoRight = styled(Go)`
   right: 0;
   transform: translateY(-50%);
+`;
+
+// Content Styles
+export const ContentWrapper = styled.div`
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5rem 2rem;
+    h3 {
+      color: var(--color-white);
+      max-width: 65%;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 1.4;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    div {
+      padding: 3rem 2rem;
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 498px) {
+    div {
+      padding: 2rem 1rem;
+      h3 {
+        width: 90%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    div {
+      padding: 1rem 1rem;
+      h3 {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+  }
 `;
