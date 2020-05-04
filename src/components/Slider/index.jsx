@@ -24,7 +24,7 @@ const Slider = () => {
       text='Disfruta de el ¡Mundo en Pedales!'
     />,
     <Content
-      src={`${IMG_PATH}slide-equipo-completo.jpg`}
+      src={`${IMG_PATH}equipo-cesped.jpg`}
       alt='Slide Equipo Completo'
       text='No importa cuanto te demores. !Lo importante es que llegues!'
     />,
