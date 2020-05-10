@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Router } from '@reach/router';
+import Context from './Context';
 import Loading from './components/Loading';
 import GlobalStyle from './styles/GlobalStyles';
 
@@ -14,19 +15,21 @@ const Contact = lazy(() => import('./views/Contact'));
 const NotFound = lazy(() => import('./views/NotFound'));
 
 const App = () => (
-  <Suspense fallback={<Loading />}>
-    <GlobalStyle />
-    <Router>
-      <Home path='/' />
-      <About path='/enbici' />
-      <Plans path='/plans' />
-      <Basic path='/basic' />
-      <Adventure path='/adventure' />
-      <Extreme path='/extreme' />
-      <Contact path='/contact' />
-      <NotFound default />
-    </Router>
-  </Suspense>
+  <Context.Provider>
+    <Suspense fallback={<Loading />}>
+      <GlobalStyle />
+      <Router>
+        <Home path='/' />
+        <About path='/enbici' />
+        <Plans path='/plans' />
+        <Basic path='/basic' />
+        <Adventure path='/adventure' />
+        <Extreme path='/extreme' />
+        <Contact path='/contact' />
+        <NotFound default />
+      </Router>
+    </Suspense>
+  </Context.Provider>
 );
 
 export default App;
