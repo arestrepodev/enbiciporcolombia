@@ -39,10 +39,8 @@ export const Contact = styled.div`
     }
   }
 `;
-export const Language = styled.div`
+export const Language = styled.button`
   padding: 1rem;
   background: var(--color-blue);
-  a {
-    text-decoration: none;
-  }
+  cursor: pointer;
 `;

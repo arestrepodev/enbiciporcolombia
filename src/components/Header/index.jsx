@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from '@reach/router';
 import { MdPermPhoneMsg } from 'react-icons/md';
 import { FaWhatsapp } from 'react-icons/fa';
+import { Context } from '../../Context';
 import {
   WrapperHeader,
   HeaderComponent,
@@ -13,6 +14,13 @@ import Logo from '../Logo';
 import Menu from '../Menu';
 
 const Header = () => {
+  const [language, setLanguage] = useState(false);
+  const { activeEnglish, disableEnglish } = useContext(Context);
+
+  const changeLanguage = () => {
+    setLanguage(!language);
+    language ? disableEnglish() : activeEnglish();
+  };
   return (
     <>
       <TopBar>
@@ -30,8 +38,8 @@ const Header = () => {
             416 7748900 - CA
           </a>
         </Contact>
-        <Language>
-          <a href='#'>English</a>
+        <Language type='button' onClick={changeLanguage}>
+          {language ? 'Español' : 'English'}
         </Language>
       </TopBar>
       <WrapperHeader>

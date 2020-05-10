@@ -8,9 +8,9 @@ const Provider = ({ children }) => {
   });
   const value = {
     isEnglish,
-    activeEnglish: (language) => {
+    activeEnglish: () => {
       setIsEnglish(true);
-      window.sessionStorage.setItem('token', language);
+      window.sessionStorage.setItem('language', 'true');
     },
     disableEnglish: () => {
       setIsEnglish(false);
