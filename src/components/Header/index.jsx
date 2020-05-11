@@ -15,7 +15,7 @@ import Menu from '../Menu';
 
 const Header = () => {
   const [language, setLanguage] = useState(false);
-  const { activeEnglish, disableEnglish } = useContext(Context);
+  const { activeEnglish, disableEnglish, isEnglish } = useContext(Context);
 
   const changeLanguage = () => {
     setLanguage(!language);
@@ -27,7 +27,7 @@ const Header = () => {
         <Contact>
           <a href='https://wa.link/yvwpyc'>
             <FaWhatsapp />
-            Quiero Cotizar
+            {isEnglish ? 'I want to buy' : 'Quiero Cotizar'}
           </a>
           <a href='https://wa.link/yvwpyc' className='is--hide'>
             <MdPermPhoneMsg />
@@ -39,7 +39,7 @@ const Header = () => {
           </a>
         </Contact>
         <Language type='button' onClick={changeLanguage}>
-          {language ? 'Español' : 'English'}
+          {isEnglish ? 'Español' : 'English'}
         </Language>
       </TopBar>
       <WrapperHeader>

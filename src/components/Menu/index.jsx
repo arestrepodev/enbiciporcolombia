@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { MdMoreVert, MdClose } from 'react-icons/md';
+import { Context } from '../../Context';
 import { Nav, Link } from './style';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 const Menu = () => {
-  const size = useWindowSize();
+  const { isEnglish } = useContext(Context);
 
+  const size = useWindowSize();
   const [showMenu, setShowMenu] = useState('');
 
   const handleMenu = () => {
@@ -21,19 +23,21 @@ const Menu = () => {
     <Nav>
       <ul className={!showMenu ? 'is-disabled' : ''}>
         <li>
-          <Link to='/'>Inicio</Link>
+          <Link to='/'>{isEnglish ? 'Home' : 'Inicio'}</Link>
         </li>
         <li>
-          <Link to='/enbici'>¿Por qué en Bici?</Link>
+          <Link to='/enbici'>
+            {isEnglish ? 'About Us' : '¿Por qué en Bici?'}
+          </Link>
         </li>
         <li>
-          <Link to='/plans'>Planes</Link>
+          <Link to='/plans'>{isEnglish ? 'Plans' : 'Planes'}</Link>
         </li>
         {/* <li>
             <Link to='/partners'>Aliados</Link>
           </li> */}
         <li>
-          <Link to='/contact'>Contacto</Link>
+          <Link to='/contact'>{isEnglish ? 'Contact' : 'Contacto'}</Link>
         </li>
       </ul>
       <button onClick={handleMenu} type='button'>
