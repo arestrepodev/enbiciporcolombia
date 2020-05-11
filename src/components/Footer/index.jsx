@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdPhone, MdMail, MdLocationOn } from 'react-icons/md';
+import { Context } from '../../Context';
 import {
   FooterWrapper,
   FooterArticle,
@@ -11,17 +12,22 @@ import { ButtonBlue } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
 
 const Footer = () => {
+  const { isEnglish } = useContext(Context);
   return (
     <FooterWrapper>
       <FooterArticle>
-        <h5>Acerca de:</h5>
+        <h5>{isEnglish ? 'About us:' : 'Acerca de:'}</h5>
         <p>
-          &copy; Enbiciporcolombia es una marca registrada, cambiamos el
-          paradigma de viajar por Colombia.
+          {isEnglish
+            ? `© Enbiciporcolombia is a registered trademark, we changed the paradigm of traveling in Colombia.`
+            : `© Enbiciporcolombia es una marca registrada, cambiamos el paradigma de viajar por Colombia.`}
         </p>
         <FooterList>
           <li>
-            <MdMail /> quieroviajar@enbiciporcolombia.com
+            <MdMail />{' '}
+            {isEnglish
+              ? 'travel@enbiciporcolombia.com'
+              : 'quieroviajar@enbiciporcolombia.com'}
           </li>
           <li>
             <MdPhone /> 312 4679089 - Colombia
@@ -35,38 +41,58 @@ const Footer = () => {
         </FooterList>
       </FooterArticle>
       <FooterArticle>
-        <h5>Noticias:</h5>
+        <h5>{isEnglish ? 'News:' : 'Noticias:'}</h5>
         <p>
-          En Colombia hay miles de paraisos por visitar en tu bici, atento a
-          nuestras publicaciones:
+          {isEnglish
+            ? 'In Colombia there are thousands of paradises to visit on your bike, attentive to our publications:'
+            : 'En Colombia hay miles de paraisos por visitar en tu bici, atento a nuestras publicaciones:'}
         </p>
         <FooterList>
           <li>
-            <a href='/'>Ganas, Perseverancia y Bici</a>
+            <a href='/'>
+              {isEnglish
+                ? 'Win, Perseverance and Bike'
+                : 'Ganas, Perseverancia y Bici'}{' '}
+            </a>
           </li>
           <li>
-            <a href='/'>El panorama del ciclismo</a>
+            <a href='/'>
+              {isEnglish ? 'The cycling panorama' : 'El panorama del ciclismo'}
+            </a>
           </li>
           <li>
-            <a href='/'>Nuestros jóvenes ciclistas</a>
+            <a href='/'>
+              {isEnglish ? 'Our Young Cyclists' : 'Nuestros jóvenes ciclistas'}
+            </a>
           </li>
         </FooterList>
       </FooterArticle>
       <FooterArticle>
-        <h5>Suscríbete:</h5>
+        <h5>{isEnglish ? 'Subscribe:' : 'Suscríbete:'} </h5>
         <p>
-          Haz parte del mundo enbiciporcolombia y no te pierdas de ninguna
-          novedad:
+          {isEnglish
+            ? "Become part of the world in Colombia and don't miss any news:"
+            : 'Haz parte del mundo enbiciporcolombia y no te pierdas de ninguna novedad:'}
         </p>
         <FooterForm>
-          <input type='text' placeholder='Nombre' required />
+          <input
+            type='text'
+            placeholder={isEnglish ? 'Name:' : 'Nombre'}
+            required
+          />
           <input type='email' placeholder='Email' required />
-          <ButtonBlue type='submit'>Suscribirme</ButtonBlue>
+          <ButtonBlue type='submit'>
+            {isEnglish ? 'Subscribe' : 'Suscribirme'}
+          </ButtonBlue>
         </FooterForm>
       </FooterArticle>
       <FooterArticle>
-        <h5>Galeria:</h5>
-        <p>Las mejores fotos de nuestras aventuras en bicicleta:</p>
+        <h5>{isEnglish ? 'Gallery:' : 'Galeria:'}</h5>
+        <p>
+          {isEnglish
+            ? 'The best photos of our clients during their trips:'
+            : 'Las mejores fotos de nuestras aventuras en bicicleta:'}
+        </p>
         <Gallery>
           <img
             src={`${IMG_PATH}extreme-neblina.jpg`}
