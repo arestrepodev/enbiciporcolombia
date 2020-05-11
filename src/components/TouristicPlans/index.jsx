@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MdToday, MdPersonPin, MdPlace, MdStar } from 'react-icons/md';
+import { Context } from '../../Context';
 import {
   TouristicPlansWrapper,
   TouristicPlansList,
   Plan,
   PlanLabels,
   PlanDescription,
-  PlanPrice
+  PlanPrice,
 } from './style';
-import StyledTitle from "../../components/StyledTitle"
-import dataPlans from '../../api/plans.json';
+import StyledTitle from '../StyledTitle';
+import spanishDestinations from '../../api/destinationsEs.json';
+import englishDestinations from '../../api/destinationsEn.json';
 
 const TouristicPlans = () => {
+  const { isEnglish } = useContext(Context);
+  const [dataPlans, setDataPlans] = useState(spanishDestinations);
+  useEffect(() => {
+    isEnglish
+      ? setDataPlans(englishDestinations)
+      : setDataPlans(spanishDestinations);
+  }, [isEnglish]);
   return (
     <TouristicPlansWrapper>
-      <StyledTitle subtitle='Tenemos los Mejores' title='Destinos' />
+      <StyledTitle
+        subtitle={isEnglish ? 'The Best' : 'Tenemos los Mejores'}
+        title={isEnglish ? 'Destinations' : 'Destinos'}
+      />
       <TouristicPlansList>
-        {dataPlans.map(plan => (
+        {dataPlans.map((plan) => (
           <Plan key={plan.id}>
             <img src={plan.img} alt={plan.title} />
             <PlanLabels>

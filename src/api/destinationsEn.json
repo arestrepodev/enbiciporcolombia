@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "calendar_number": 2,
+    "min_age": "18+",
+    "plan_type": "scale",
+    "title": "Warm Weather",
+    "description": "With its 24 ° C you will challenge yourself to the imposing mountains and crossings of Quindío, enjoying delicious Colombian coffee and sweet fruits from the area.",
+    "base_price": "24-30 °C",
+    "stars": 9,
+    "opinions": "Good",
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-calido.jpg"
+  },
+  {
+    "id": 2,
+    "calendar_number": 2,
+    "min_age": "18+",
+    "plan_type": "plano",
+    "title": "Mild Weather",
+    "description": "It is the perfect wheater for enjoy the trips through small and large mountains, the paths that can improve and challenge you.",
+    "base_price": "15-27 °C",
+    "stars": 8,
+    "opinions": "Good",
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-templado.jpg"
+  },
+  {
+    "id": 3,
+    "calendar_number": 2,
+    "min_age": "18+",
+    "plan_type": "scale",
+    "title": "Cold Weather",
+    "description": "You will pedal over 3440 M.S.N.M, you will enjoy the stops, lakes and cultures. You will go from the Zipaquirá salt mine to Monserrate in Bogotá.",
+    "base_price": "12-25 °C",
+    "stars": 9,
+    "opinions": "Good",
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-frio.jpg"
+  },
+  {
+    "id": 4,
+    "calendar_number": 6,
+    "min_age": "18+",
+    "plan_type": "scale",
+    "title": "Warm Weather",
+    "description": "At 31 ° C you will pedal between rivers, ravines, deserts like Tatacoa and the longest port in the world: EL ALTO DE LETRAS, you will measure the mind and physical condition",
+    "base_price": "31-38 °C",
+    "stars": "9.5+",
+    "opinions": "Good",
+    "img": "https://enbici.s3.us-east-2.amazonaws.com/images/clima-caliente.jpg"
+  }
+]
