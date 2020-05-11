@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   MdCameraEnhance,
   MdLocationOn,
   MdLocalFlorist,
-  MdDirectionsBike
+  MdDirectionsBike,
 } from 'react-icons/md';
+import { Context } from '../../Context';
 import {
   FeaturesWrapper,
   FeaturesHeader,
   FeaturesContent,
-  FeaturesList
+  FeaturesList,
 } from './style';
 
 const Features = () => {
+  const { isEnglish } = useContext(Context);
   return (
     <FeaturesWrapper>
       <FeaturesHeader>
-        <small>Disfruta de tus</small>
-        <h3>Vaciones por Colombia</h3>
+        <small>{isEnglish ? 'Enjoy your' : 'Disfruta de tus'}</small>
+        <h3>{isEnglish ? 'Vacations in Colombia' : 'Vaciones por Colombia'}</h3>
         <p>
-          En bici vas a conocer la verdadera aventura de explorar paisajes y
-          nuevas culturas, únete a la tendencia{' '}
-          <strong>ENBICIPORCOLOMBIA.</strong>
+          {isEnglish
+            ? 'You will know the true adventure of exploring landscapes and new cultures, join the ENBICIPORCOLOMBIA trend.'
+            : 'En bici vas a conocer la verdadera aventura de explorar paisajes y nuevas culturas, únete a la tendencia ENBICIPORCOLOMBIA.'}
         </p>
       </FeaturesHeader>
 
@@ -29,19 +31,19 @@ const Features = () => {
         <FeaturesList>
           <li>
             <MdCameraEnhance size='50' />
-            <h5>Conoce</h5>
+            <h5>{isEnglish ? 'Known' : 'Conoce'}</h5>
           </li>
           <li>
             <MdLocationOn size='50' />
-            <h5>Disfruta</h5>
+            <h5>{isEnglish ? 'Enjoy' : 'Disfruta'}</h5>
           </li>
           <li>
             <MdLocalFlorist size='50' />
-            <h5>Visita</h5>
+            <h5>{isEnglish ? 'Travel' : 'Visita'}</h5>
           </li>
           <li>
             <MdDirectionsBike size='50' />
-            <h5>Entrena</h5>
+            <h5>{isEnglish ? 'Train' : 'Entrena'}</h5>
           </li>
         </FeaturesList>
       </FeaturesContent>
