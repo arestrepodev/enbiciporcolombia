@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../../Context';
 import { IMG_PATH } from '../../helpers';
 import { MetricsWrapper, MetricsImages, MetricsNumbers } from './style';
 
 const Metrics = () => {
+  const { isEnglish } = useContext(Context);
   return (
     <MetricsWrapper>
       <MetricsImages>
@@ -21,19 +23,19 @@ const Metrics = () => {
         <ul>
           <li>
             <h4>256</h4>
-            <small>Solicitudes</small>
+            <small>{isEnglish ? 'Requests' : 'Solicitudes'}</small>
           </li>
           <li>
             <h4>20</h4>
-            <small>Ciudades</small>
+            <small>{isEnglish ? 'Cities' : 'Ciudades'}</small>
           </li>
           <li>
             <h4>400</h4>
-            <small>Hoteles</small>
+            <small>{isEnglish ? 'Hotels' : 'Hoteles'}</small>
           </li>
           <li>
             <h4>8</h4>
-            <small>Planes</small>
+            <small>{isEnglish ? 'Plans' : 'Planes'}</small>
           </li>
         </ul>
       </MetricsNumbers>
