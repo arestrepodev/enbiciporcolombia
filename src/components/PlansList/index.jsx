@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { MdStars } from 'react-icons/md';
+import { Context } from '../../Context';
 import {
   PlansListWrapper,
   PlansListHeader,
@@ -14,6 +15,7 @@ import { IMG_PATH } from '../../helpers';
 import ApiPlansDetails from '../../api/plansDetails';
 
 const PlansList = () => {
+  const { isEnglish } = useContext(Context);
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(`${ApiPlansDetails}`, {
@@ -24,31 +26,30 @@ const PlansList = () => {
         },
       });
       const data = await response.json();
-      console.log(data);
     };
     fetchData();
   }, []);
   return (
     <PlansListWrapper>
       <PlansListHeader>
-        <h1>Los Mejores Planes para Ti</h1>
+        <h1>{isEnglish ? 'The Best Plans' : 'Los Mejores Planes para Ti'}</h1>
       </PlansListHeader>
       <PlansListContent>
         <PlansListTable>
           <Features>
-            <li>Rápido</li>
-            <li>Fácil</li>
-            <li>Sencillo</li>
+            <li>{isEnglish ? 'Fast' : 'Rápido'}</li>
+            <li>{isEnglish ? 'Easy' : 'Fácil'}</li>
+            <li>{isEnglish ? 'Simple' : 'Fácil'}</li>
           </Features>
           <Plans>
             <Plan>
               <img src={`${IMG_PATH}plan-basic.jpg`} alt='Plan Basic' />
               <article>
-                <h3>Plan Basic</h3>
+                <h3>{isEnglish ? 'Basic Plan' : 'Plan Basic'}</h3>
                 <p>
-                  Este plan se adecua a todos las personas que quieran iniciar a
-                  conocer Colombia en su bicicleta, realizamos recorridos
-                  cortos...
+                  {isEnglish
+                    ? 'This plan is suitable for all people who want to start to know Colombia on their bicycle, we make short tours ...'
+                    : 'Este plan se adecua a todos las personas que quieran iniciar a conocer Colombia en su bicicleta, realizamos recorridos cortos...'}
                 </p>
 
                 <b>$700.000 </b>
@@ -57,7 +58,7 @@ const PlansList = () => {
                 </span>
                 <div>
                   <LinkButtonBlueSmall className='is-block' to='/basic'>
-                    Ver Plan Basic
+                    {isEnglish ? 'View More' : 'Ver Plan Basic'}
                   </LinkButtonBlueSmall>
                 </div>
               </article>
@@ -65,11 +66,11 @@ const PlansList = () => {
             <Plan>
               <img src={`${IMG_PATH}plan-adventure.jpg`} alt='Plan Adventure' />
               <article>
-                <h3>Plan Adventure</h3>
+                <h3>{isEnglish ? 'Adventure Plan' : 'Plan Adventure'}</h3>
                 <p>
-                  Este plan reta a las personas que hagan ciclismo para
-                  aficionados de alto nivel a descrubir nuevos paisajes, tramos
-                  y rutas...
+                  {isEnglish
+                    ? 'This plan challenges people who cycle for high-level fans to discover new landscapes, sections and routes ...'
+                    : 'Este plan reta a las personas que hagan ciclismo para aficionados de alto nivel a descrubir nuevos paisajes, tramos y rutas...'}
                 </p>
 
                 <b>$1.200.000 </b>
@@ -78,7 +79,7 @@ const PlansList = () => {
                 </span>
                 <div>
                   <LinkButtonBlueSmall className='is-block' to='/adventure'>
-                    Ver Plan Adventure
+                    {isEnglish ? 'View More' : 'Ver Plan Adventure'}
                   </LinkButtonBlueSmall>
                 </div>
               </article>
@@ -86,10 +87,11 @@ const PlansList = () => {
             <Plan>
               <img src={`${IMG_PATH}plan-extreme.jpg`} alt='Plan Extreme' />
               <article>
-                <h3>Plan Extreme</h3>
+                <h3>{isEnglish ? 'Extreme Plan' : 'Plan Extreme'}</h3>
                 <p>
-                  Este plan para expertos pondrá a prueba a los ciclistas de
-                  alto rendimiento ante los climas y paisajes de Colombia...
+                  {isEnglish
+                    ? "The expert plan will test high-performance cyclists against Colombia's climates and landscapes ..."
+                    : 'Este plan para expertos pondrá a prueba a los ciclistas de alto rendimiento ante los climas y paisajes de Colombia...'}
                 </p>
 
                 <b>$1.200.000 </b>
@@ -98,7 +100,7 @@ const PlansList = () => {
                 </span>
                 <div>
                   <LinkButtonBlueSmall className='is-block' to='/extreme'>
-                    Ver Plan Extreme
+                    {isEnglish ? 'View More' : 'Ver Plan Extreme'}
                   </LinkButtonBlueSmall>
                 </div>
               </article>
