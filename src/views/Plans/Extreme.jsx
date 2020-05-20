@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdInfo, MdFace, MdLocationOn } from 'react-icons/md';
+import { Context } from '../../Context';
 import Layout from '../../components/Layout';
 import { AncleBlueSmall } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
@@ -16,56 +17,78 @@ import {
 } from './style';
 
 const Extreme = () => {
+  const { isEnglish } = useContext(Context);
   return (
     <Layout>
       <Wrapper>
         <HeaderPlan>
-          <small>Para que desafies tu mente:</small>
-          <h1>Plan Extreme</h1>
+          <small>
+            {isEnglish
+              ? 'To challenge your mind:'
+              : 'Para que desafies tu mente:'}
+          </small>
+          <h1>{isEnglish ? 'Extreme Plan' : 'Plan Extreme'}</h1>
         </HeaderPlan>
         <ContentPlan>
           <TablePlan>
             <Features>
               <li>
                 <MdInfo />
-                Nivel Avanzado
+                {isEnglish ? 'High Level' : 'Nivel Medio'}
               </li>
               <li>
                 <MdFace />
-                Experiencia Alta
+                {isEnglish ? 'High experience' : 'Experiencia Alta'}
               </li>
               <li>
                 <MdLocationOn />
-                Recorridos Extremos
+                {isEnglish ? 'Extreme Tours' : 'Recorridos Extremos'}
               </li>
             </Features>
             <Detail>
               <TitleGroup>
-                <h1>Plan Extreme</h1>
+                <h1>{isEnglish ? 'Extreme Plan' : 'Plan Extreme'}</h1>
                 <small>
-                  <span>$2.500.000</span>/ por Persona
+                  <span>$2.500.000</span>/{' '}
+                  {isEnglish ? 'For Person' : 'Por Persona'}
                 </small>
               </TitleGroup>
               <Description>
                 <div>
                   <p>
-                    Este plan para expertos pondrá a prueba a los ciclistas de
-                    alto rendimiento ante los climas y los increíbles paisajes
-                    de Colombia. Te mediras a montañas, neblina, lluvia y sol
-                    inclemente. Pero al final sentirás la satisfacción de
-                    haberlo logrado.
+                    {isEnglish
+                      ? 'This expert plan will put high-performance cyclists to the test in the climates and incredible landscapes of Colombia. You will face mountains, mist, rain and harsh sun. But in the end you will feel the satisfaction of having achieved it.'
+                      : 'Este plan para expertos pondrá a prueba a los ciclistas de alto rendimiento ante los climas y los increíbles paisajes de Colombia. Te mediras a montañas, neblina, lluvia y sol inclemente. Pero al final sentirás la satisfacción de haberlo logrado.'}
                   </p>
                   <p>
-                    El <strong> Plan Extreme</strong> incluye:
+                    {isEnglish
+                      ? 'The plan includes:'
+                      : 'El Plan Extreme incluye:'}
                   </p>
                   <ol>
-                    <li>Transporte Aeropuerto</li>
-                    <li>Alimentación durante el recorrido</li>
-                    <li>Visita a sitios de interés</li>
-                    <li>Hidratación y refrigerio</li>
+                    <li>
+                      {isEnglish
+                        ? 'Transport from the Airport'
+                        : 'Transporte Aeropuerto'}
+                    </li>
+                    <li>
+                      {isEnglish
+                        ? 'Alimentación durante el recorrido'
+                        : 'Food during the tour'}
+                    </li>
+                    <li>
+                      {isEnglish
+                        ? 'Visit to tourist sites'
+                        : 'Visita a sitios de interés'}
+                    </li>
+                    <li>
+                      {isEnglish
+                        ? 'Hydration and refreshment'
+                        : 'Hidratación y refrigerio'}
+                    </li>
                     <li>Hotel</li>
                   </ol>
-                  <h4>Galeria:</h4>
+                  <h4>{isEnglish ? 'Gallery:' : 'Galeria:'}</h4>{' '}
                   <Gallery>
                     <img
                       src={`${IMG_PATH}extreme-neblina.jpg`}
@@ -84,7 +107,7 @@ const Extreme = () => {
                     className='is-block'
                     href='https://wa.link/yvwpyc'
                   >
-                    Quiero Reservar
+                    {isEnglish ? 'I want to book' : 'Quiero reservar'}
                   </AncleBlueSmall>
                 </div>
                 <img

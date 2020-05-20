@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdInfo, MdFace, MdLocationOn } from 'react-icons/md';
+import { Context } from '../../Context';
 import Layout from '../../components/Layout';
 import { AncleBlueSmall } from '../../styles/Buttons';
 import { IMG_PATH } from '../../helpers';
@@ -16,56 +17,78 @@ import {
 } from './style';
 
 const Basic = () => {
+  const { isEnglish } = useContext(Context);
   return (
     <Layout>
       <Wrapper>
         <HeaderPlan>
-          <small>Para que inicies tu aventura:</small>
-          <h1>Plan Basic</h1>
+          <small>
+            {isEnglish
+              ? 'Your Adventure Begins:'
+              : 'Para que inicies tu aventura:'}
+          </small>
+          <h1>{isEnglish ? 'Basic Plan' : 'Plan Basic'}</h1>
         </HeaderPlan>
         <ContentPlan>
           <TablePlan>
             <Features>
               <li>
                 <MdInfo />
-                Nivel Básico
+                {isEnglish ? 'Basic Level' : 'Nivel Básico'}
               </li>
               <li>
                 <MdFace />
-                Experiencia Media
+                {isEnglish ? 'Middle Experience' : 'Experiencia Media'}
               </li>
               <li>
                 <MdLocationOn />
-                Recorrido Corto
+                {isEnglish ? 'Short Tour' : 'Recorrido Corto'}
               </li>
             </Features>
             <Detail>
               <TitleGroup>
-                <h1>Plan Basic</h1>
+                <h2>{isEnglish ? 'Basic Plan' : 'Plan Basic'}</h2>
                 <small>
-                  <span>$700.000</span>/ por Persona
+                  <span>$700.000</span>/{' '}
+                  {isEnglish ? 'For Person' : 'Por Persona'}
                 </small>
               </TitleGroup>
               <Description>
                 <div>
                   <p>
-                    Este plan se adecua a todos las personas que quieran iniciar
-                    a conocer Colombia en su bicicleta, realizamos recorridos
-                    cortos y llenos de aventura que van a desafiar tu mente. Nos
-                    encargamos de todos los detalles para que no tengas que
-                    planear nada, recorreras y disfrutaras de los paisajes.
+                    {isEnglish
+                      ? 'This plan is for all people who want to know Colombia on their bicycle, we make short tours full of adventure that will challenge your mind. We take care of all the details so that you do not have to plan anything, you will travel and enjoy the landscapes'
+                      : 'Este plan se adecua a todos las personas que quieran iniciar a conocer Colombia en su bicicleta, realizamos recorridos cortos y llenos de aventura que van a desafiar tu mente. Nos encargamos de todos los detalles para que no tengas que planear nada, recorreras y disfrutaras de los paisajes.'}
                   </p>
                   <p>
-                    El <strong> Plan Basic</strong> incluye:
+                    {isEnglish
+                      ? 'The plan includes:'
+                      : 'El Plan Basic incluye:'}
                   </p>
                   <ol>
-                    <li>Transporte Aeropuerto</li>
-                    <li>Alimentación durante el recorrido</li>
-                    <li>Visita a sitios de interés</li>
-                    <li>Hidratación y refrigerio</li>
+                    <li>
+                      {isEnglish
+                        ? 'Transport from the Airport'
+                        : 'Transporte Aeropuerto'}
+                    </li>
+                    <li>
+                      {isEnglish
+                        ? 'Alimentación durante el recorrido'
+                        : 'Food during the tour'}
+                    </li>
+                    <li>
+                      {isEnglish
+                        ? 'Visit to tourist sites'
+                        : 'Visita a sitios de interés'}
+                    </li>
+                    <li>
+                      {isEnglish
+                        ? 'Hydration and refreshment'
+                        : 'Hidratación y refrigerio'}
+                    </li>
                     <li>Hotel</li>
                   </ol>
-                  <h4>Galeria:</h4>
+                  <h4>{isEnglish ? 'Gallery:' : 'Galeria:'}</h4>
                   <Gallery>
                     <img
                       src={`${IMG_PATH}basic-nairo.jpg`}
@@ -81,7 +104,7 @@ const Basic = () => {
                     className='is-block'
                     href='https://wa.link/yvwpyc'
                   >
-                    Quiero Reservar
+                    {isEnglish ? 'I want to book' : 'Quiero reservar'}
                   </AncleBlueSmall>
                 </div>
                 <img
