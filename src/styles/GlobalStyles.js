@@ -49,7 +49,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--color-blue);
     color: var(--color-white);
   }
-  
+
+  .is--display--none{
+    display: none;
+  }
 `;
 
 export default GlobalStyle;

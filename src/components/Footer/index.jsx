@@ -74,13 +74,31 @@ const Footer = () => {
             ? "Become part of the world in Colombia and don't miss any news:"
             : 'Haz parte del mundo enbiciporcolombia y no te pierdas de ninguna novedad:'}
         </p>
-        <FooterForm>
+        <FooterForm
+          method='POST'
+          id='formulario-suscripcion-enbici'
+          action='https://formsubmit.io/send/c21acb26-489c-4ef8-bb81-1312ea72fedf'
+        >
           <input
             type='text'
+            name='name'
+            id='name'
             placeholder={isEnglish ? 'Name:' : 'Nombre'}
             required
           />
-          <input type='email' placeholder='Email' required />
+          <input
+            name='email'
+            id='email'
+            type='email'
+            placeholder='Email'
+            required
+          />
+          <input
+            name='_subscribeFormEnBici'
+            id='_subscribeFormEnBici'
+            type='text'
+            className='is--display--none'
+          />
           <ButtonBlue type='submit'>
             {isEnglish ? 'Subscribe' : 'Suscribirme'}
           </ButtonBlue>
