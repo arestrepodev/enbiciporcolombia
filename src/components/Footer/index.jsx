@@ -77,7 +77,7 @@ const Footer = () => {
         <FooterForm
           method='POST'
           id='formulario-suscripcion-enbici'
-          action='https://formsubmit.io/send/c21acb26-489c-4ef8-bb81-1312ea72fedf'
+          action='https://formsubmit.io/send/bd114982-3f14-4ad4-833c-f3bdbf1b0f9d'
         >
           <input
             type='text'
@@ -94,8 +94,8 @@ const Footer = () => {
             required
           />
           <input
-            name='_subscribeFormEnBici'
-            id='_subscribeFormEnBici'
+            name='_formulario-suscripcion-enbici'
+            id='_formulario-suscripcion-enbici'
             type='text'
             className='is--display--none'
           />

@@ -6,7 +6,11 @@ import { Form, Title, FormControl, Subtitle } from './style';
 const ContactForm = () => {
   const { isEnglish } = useContext(Context);
   return (
-    <Form action='#'>
+    <Form
+      method='POST'
+      id='formulario-contacto-enbici'
+      action='https://formsubmit.io/send/bd114982-3f14-4ad4-833c-f3bdbf1b0f9d'
+    >
       <Title>{isEnglish ? 'Read your Message' : 'Escríbe tu mensaje'}</Title>
       <Subtitle>
         {isEnglish
@@ -30,6 +34,12 @@ const ContactForm = () => {
           name='name'
           id='name'
           placeholder={isEnglish ? 'My Name' : 'Mi nombre...'}
+        />
+        <input
+          name='_formulario-contacto-enbici'
+          id='_formulario-contacto-enbici'
+          type='text'
+          className='is--display--none'
         />
       </FormControl>
       <FormControl>
