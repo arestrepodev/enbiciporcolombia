@@ -52,7 +52,7 @@ const PlansList = () => {
                     : 'Este plan se adecua a todos las personas que quieran iniciar a conocer Colombia en su bicicleta, realizamos recorridos cortos...'}
                 </p>
 
-                <b>$700.000 </b>
+                {/* <b>$700.000 </b> */}
                 <span>
                   7.0 <MdStars />
                 </span>
@@ -73,7 +73,7 @@ const PlansList = () => {
                     : 'Este plan reta a las personas que hagan ciclismo para aficionados de alto nivel a descrubir nuevos paisajes, tramos y rutas...'}
                 </p>
 
-                <b>$1.200.000 </b>
+                {/* <b>$1.200.000 </b> */}
                 <span>
                   8.0 <MdStars />
                 </span>
@@ -94,7 +94,7 @@ const PlansList = () => {
                     : 'Este plan para expertos pondrá a prueba a los ciclistas de alto rendimiento ante los climas y paisajes de Colombia...'}
                 </p>
 
-                <b>$1.200.000 </b>
+                {/* <b>$1.200.000 </b> */}
                 <span>
                   9.0 <MdStars />
                 </span>

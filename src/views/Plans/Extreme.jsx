@@ -48,10 +48,10 @@ const Extreme = () => {
             <Detail>
               <TitleGroup>
                 <h1>{isEnglish ? 'Extreme Plan' : 'Plan Extreme'}</h1>
-                <small>
+                {/* <small>
                   <span>$2.500.000</span>/{' '}
                   {isEnglish ? 'For Person' : 'Por Persona'}
-                </small>
+                </small> */}
               </TitleGroup>
               <Description>
                 <div>

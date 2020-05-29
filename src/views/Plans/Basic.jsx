@@ -48,10 +48,10 @@ const Basic = () => {
             <Detail>
               <TitleGroup>
                 <h2>{isEnglish ? 'Basic Plan' : 'Plan Basic'}</h2>
-                <small>
+                {/* <small>
                   <span>$700.000</span>/{' '}
                   {isEnglish ? 'For Person' : 'Por Persona'}
-                </small>
+                </small> */}
               </TitleGroup>
               <Description>
                 <div>

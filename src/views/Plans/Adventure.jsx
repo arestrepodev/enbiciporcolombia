@@ -46,10 +46,10 @@ const Adventure = () => {
             <Detail>
               <TitleGroup>
                 <h2>{isEnglish ? 'Plan Adventure' : 'Adventure Plan'}</h2>
-                <small>
+                {/* <small>
                   <span>$1.200.000</span>/{' '}
                   {isEnglish ? 'For Person' : 'Por Persona'}
-                </small>
+                </small> */}
               </TitleGroup>
               <Description>
                 <div>
