@@ -2,18 +2,24 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from '@reach/router';
 
 export const Nav = styled.nav`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
   &:focus {
     outline: 0;
   }
   ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     li {
       padding: 0 1rem;
       a {
         font-weight: 600;
         text-decoration: none;
         color: var(--color-black);
+        font-size: 1.2rem
         &:hover {
           color: var(--color-light-green);
         }
@@ -54,6 +60,9 @@ export const Nav = styled.nav`
         padding: 1rem;
         width: 100%;
         cursor: pointer;
+        a {
+          font-size: 1rem;
+        }
         &:hover {
           background: var(--color-blue);
           a {

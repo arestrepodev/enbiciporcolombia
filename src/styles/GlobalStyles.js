@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     line-height: 1;
+    font-size: 16px;
     overscroll-behavior: none;
     overflow-x: hidden;
   }

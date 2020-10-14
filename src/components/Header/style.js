@@ -41,6 +41,7 @@ export const Contact = styled.div`
 `;
 export const Language = styled.button`
   padding: 1rem;
+  font-size: 1rem;
   background: var(--color-blue);
   cursor: pointer;
 `;

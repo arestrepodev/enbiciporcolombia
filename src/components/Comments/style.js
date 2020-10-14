@@ -4,8 +4,7 @@ export const CommentsWrapper = styled.section`
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: url('https://i.picsum.photos/id/961/1000/350.jpg') top
-    center/cover no-repeat fixed var(--color-black);
+  background: var(--color-black);
   padding: 2rem 1rem;
   box-shadow: inset 0px 0px 5px 0px rgba(89, 89, 89, 0.57);
 `;

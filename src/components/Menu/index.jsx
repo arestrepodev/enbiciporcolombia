@@ -33,9 +33,9 @@ const Menu = () => {
         <li>
           <Link to='/plans'>{isEnglish ? 'Plans' : 'Planes'}</Link>
         </li>
-        {/* <li>
-            <Link to='/partners'>Aliados</Link>
-          </li> */}
+        <li>
+          <Link to='/partners'>{isEnglish ? 'Plans' : 'Aliados'}</Link>
+        </li>
         <li>
           <Link to='/contact'>{isEnglish ? 'Contact' : 'Contacto'}</Link>
         </li>
