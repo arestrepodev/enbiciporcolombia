@@ -26,8 +26,8 @@ const Footer = () => {
           <li>
             <MdMail />{' '}
             {isEnglish
-              ? 'travel@enbiciporcolombia.com'
-              : 'quieroviajar@enbiciporcolombia.com'}
+              ? 'enbiciporcolombia2020@gmail.com'
+              : 'enbiciporcolombia2020@gmail.com'}
           </li>
           <li>
             <MdPhone /> 312 4679089 - Colombia
