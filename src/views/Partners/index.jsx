@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from '../../components/Header';
 import Layout from '../../components/Layout';
+import AboutPartners from '../../components/AboutPartners';
+import PartnersSection from '../../components/Partners';
 
 const Partners = () => (
   <Layout>
-    <Header />
-    <p>Partners Page</p>
+    <AboutPartners />
+    <PartnersSection />
   </Layout>
 );
 

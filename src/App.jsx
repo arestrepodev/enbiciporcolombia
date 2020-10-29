@@ -23,6 +23,7 @@ const App = () => (
         <About path='/enbici' />
         <Plans path='/plans' />
         <Basic path='/basic' />
+        <Partners path='/partners' />
         <Adventure path='/adventure' />
         <Extreme path='/extreme' />
         <Contact path='/contact' />
