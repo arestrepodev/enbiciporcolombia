@@ -24,9 +24,9 @@ export const AboutTitle = styled.h2`
 export const AboutDescriptionWrapper = styled.div``;
 
 export const AboutDescription = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--color-black);
-  line-height: 1.4;
+  line-height: 1.3;
   margin-bottom: 1rem;
   /* background: var(--color-black); */
 `;
