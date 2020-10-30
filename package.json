@@ -6,7 +6,9 @@
   "scripts": {
     "now-build": "npm run build",
     "serve": "http-server dist",
-    "build": "webpack --config=webpack.prod.js",
+    "routing": "cp _redirects dist/",
+    "config:build": "webpack --config=webpack.prod.js",
+    "build": "npm run config:build && npm run routing ",
     "dev": "webpack-dev-server",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
