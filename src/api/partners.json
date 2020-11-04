@@ -1,0 +1,98 @@
+[
+  {
+    "id": 100,
+    "name": "Hotel Clarion",
+    "logo": "logo-clarion-hotel.jpg",
+    "description": "Habitaciones con una excelente ubicación. Ideal para negocios o descanso. Amplios salones para eventos sociales y empresariales. Planes románticos.",
+    "images": [
+      {
+        "key": 1,
+        "img": "clarion-hotel-01.jpg"
+      },
+      {
+        "key": 2,
+        "img": "clarion-hotel-02.jpg"
+      },
+      {
+        "key": 3,
+        "img": "clarion-hotel-03.jpg"
+      },
+      {
+        "key": 4,
+        "img": "clarion-hotel-04.jpg"
+      },
+      {
+        "key": 5,
+        "img": "clarion-hotel-05.jpg"
+      },
+      {
+        "key": 6,
+        "img": "clarion-hotel-06.jpg"
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Bike 200",
+    "logo": "logo-bike-200.jpg",
+    "description": "Venta de bicicletas, repuestos, accesorios, indumentaria y servicio especializado de mantenimiento de bicicletas en general",
+    "images": [
+      {
+        "key": 15,
+        "img": "bike-200-01.jpg"
+      },
+      {
+        "key": 16,
+        "img": "bike-200-02.jpg"
+      },
+      {
+        "key": 17,
+        "img": "bike-200-03.jpg"
+      },
+      {
+        "key": 18,
+        "img": "bike-200-04.jpg"
+      },
+      {
+        "key": 19,
+        "img": "bike-200-05.jpg"
+      },
+      {
+        "key": 20,
+        "img": "bike-200-06.jpg"
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Hotel Villa Juliana",
+    "logo": "logo-hotel-villa-juliana.jpg",
+    "description": "Hotel Campestre Villa Juliana, Chía: Confirmación instantánea, mejor precio garantizado, fotos, reseñas, mapas e información del hotel.",
+    "images": [
+      {
+        "key": 22,
+        "img": "hotel-villa-juliana-01.jpg"
+      },
+      {
+        "key": 23,
+        "img": "hotel-villa-juliana-02.jpg"
+      },
+      {
+        "key": 24,
+        "img": "hotel-villa-juliana-03.jpg"
+      },
+      {
+        "key": 25,
+        "img": "hotel-villa-juliana-04.jpg"
+      },
+      {
+        "key": 26,
+        "img": "hotel-villa-juliana-05.jpg"
+      },
+      {
+        "key": 27,
+        "img": "hotel-villa-juliana-06.jpg"
+      }
+    ]
+  }
+]
