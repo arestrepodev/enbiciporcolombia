@@ -94,5 +94,37 @@
         "img": "hotel-villa-juliana-06.jpg"
       }
     ]
+  },
+  {
+    "id": 404,
+    "name": "Fortuna Resto Deli",
+    "logo": "logo-fortuna.jpg",
+    "description": "Hotel Campestre Villa Juliana, Chía: Confirmación instantánea, mejor precio garantizado, fotos, reseñas, mapas e información del hotel.",
+    "images": [
+      {
+        "key": 28,
+        "img": "fortuna-restaurante-01.jpg"
+      },
+      {
+        "key": 29,
+        "img": "fortuna-restaurante-02.jpg"
+      },
+      {
+        "key": 30,
+        "img": "fortuna-restaurante-03.jpg"
+      },
+      {
+        "key": 31,
+        "img": "fortuna-restaurante-04.jpg"
+      },
+      {
+        "key": 32,
+        "img": "fortuna-restaurante-05.jpg"
+      },
+      {
+        "key": 33,
+        "img": "fortuna-restaurante-06.jpg"
+      }
+    ]
   }
 ]
