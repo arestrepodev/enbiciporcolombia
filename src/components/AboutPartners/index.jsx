@@ -26,7 +26,7 @@ const AboutPartners = () => {
       </AboutDescriptionWrapper>
       <AboutImageWrapper>
         <AboutImage
-          src={`${IMG_PATH}enbici-descansando.jpg`}
+          src={`${IMG_PATH}aliados-banner.jpg`}
           alt='Acerca de En Bici'
         />
       </AboutImageWrapper>
