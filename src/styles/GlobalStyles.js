@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html{
+    font-size: 18px;
     box-sizing: border-box;
     font-family: "Josefin Sans", --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }

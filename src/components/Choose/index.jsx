@@ -21,7 +21,7 @@ const Choose = () => {
         <p>
           {isEnglish
             ? 'Choose your routes and enjoy the scenery, we take care of you to spend the best holidays with your bike.'
-            : 'Escoge tus rutas y disfruta del paisaje, nsotros nos encargaremos para que pases las mejores vacaciones en compañia de tú bicicleta.'}
+            : 'Escoge tus rutas y disfruta del paisaje, nosotros nos encargaremos para que pases las mejores vacaciones en compañia de tú bicicleta.'}
         </p>
       </ChooseHeader>
 
