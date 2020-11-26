@@ -55,6 +55,20 @@ const GlobalStyle = createGlobalStyle`
   .is--display--none{
     display: none;
   }
+
+  .BottomBar{
+    background: rgba(0,0,0,0.7);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    a{
+      color: var(--color-light-gray);
+      margin-left: 5px;
+    }
+
+  }
 `;
 
 export default GlobalStyle;
